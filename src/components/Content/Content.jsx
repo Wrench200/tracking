@@ -229,17 +229,20 @@ function Content() {
           >
             {error}
           </p>
-         
         </div>
       </section>
-    
+
       <section className="central">
         {" "}
         <div className="numbers" ref={ref}>
-          <div className={style.left}>
-            <Image width={1000} height={1000} src={"/images/images-compagnie-livraison.png"} />
+          <div className={style.left} data-aos="fade-up">
+            <Image
+              width={1000}
+              height={1000}
+              src={"/images/images-compagnie-livraison.png"}
+            />
           </div>
-          <div className={style.right}>
+          <div className={style.right} data-aos="fade-up">
             <h1 className={style.introa}>
               Company Offering Domestic and International Courier Services
             </h1>
@@ -296,33 +299,6 @@ function Content() {
               </div>
             </div>
           </div>
-
-          {/* <div className="lineBox">
-            <h2>
-              {isVisible && <Counter start={0} end={9004360} duration={3000} />}
-            </h2>
-            <p>Packages Delivered</p>
-          </div>
-          <div className="lineBox">
-            <h2>
-              {isVisible && <Counter start={0} end={8029976} duration={3000} />}
-            </h2>
-            <p>Repeat Customers</p>
-          </div>
-          <div className="lineBox">
-            <h2>
-              {isVisible && (
-                <Counter start={0} end={11053808} duration={3000} />
-              )}
-            </h2>
-            <p>Our Clients</p>
-          </div>
-          <div className="lineBox">
-            <h2>
-              {isVisible && <Counter start={0} end={990909} duration={3000} />}
-            </h2>
-            <p>Commercial Goods</p>
-          </div> */}
         </div>
       </section>
       <section className={style.steps}>
@@ -336,10 +312,15 @@ function Content() {
             </p>
           </div>
           <div className={style.boxes}>
-            <div className={style.card}>
+            <div className={style.card} data-aos="fade-right">
               <h2 className={style.step}>Step 1</h2>
               <div className={style.cardImage}>
-                <Image width={1000} height={1000} src="/images/pkone.svg" alt="" />
+                <Image
+                  width={1000}
+                  height={1000}
+                  src="/images/pkone.svg"
+                  alt=""
+                />
               </div>
               <h1>Order processing and shipping</h1>
               <p>
@@ -347,11 +328,16 @@ function Content() {
                 delivery driver.
               </p>
             </div>
-            <div className={style.card}>
+            <div className={style.card} data-aos="zoom-out">
               <h2 className={style.step}>Step 2</h2>
 
               <div className={style.cardImage}>
-                <Image width={1000} height={1000} src="/images/pktwo.svg" alt="" />
+                <Image
+                  width={1000}
+                  height={1000}
+                  src="/images/pktwo.svg"
+                  alt=""
+                />
               </div>
               <h1>Parcel pick-up</h1>
               <p>
@@ -360,11 +346,16 @@ function Content() {
                 delivery time via year online customer portal
               </p>
             </div>
-            <div className={style.card}>
+            <div className={style.card} data-aos="fade-left">
               <h2 className={style.step}>Step 3</h2>
 
               <div className={style.cardImage}>
-                <Image width={1000} height={1000} src="/images/pkthree.svg" alt="" />
+                <Image
+                  width={1000}
+                  height={1000}
+                  src="/images/pkthree.svg"
+                  alt=""
+                />
               </div>
               <h1>Parcel Delivery</h1>
               <p>
@@ -392,20 +383,36 @@ function Content() {
           </div>
           <div className={style.boxes}>
             <div
+              data-aos="zoom-out"
+              data-aos-delay={100}
               className={style.cardDeck}
               onClick={() => navigate.push("/about")}
             >
-              <Image width={1000} height={1000} src={"/images/pexels-pixabay-269790.jpg"} />
+              <Image
+                width={1000}
+                height={1000}
+                src={"/images/pexels-pixabay-269790.jpg"}
+              />
               <h1>International Shipping</h1>
             </div>
             <div
+              data-aos="zoom-out"
+              data-aos-delay={200}
               className={style.cardDeck}
               onClick={() => navigate.push("/about")}
             >
-              <Image width={1000} height={1000} src={"/images/pexels-rdne-7363102.jpg"} />
+              <Image
+                width={1000}
+                height={1000}
+                src={"/images/pexels-rdne-7363102.jpg"}
+              />
               <h1>Same day delivery </h1>
             </div>
-            <div className={style.cardDeck}>
+            <div
+              className={style.cardDeck}
+              data-aos="zoom-out"
+              data-aos-delay={300}
+            >
               <h1>
                 Ship without limits: Contact us for your Canadian and
                 international shipping needs!{" "}
@@ -423,9 +430,14 @@ function Content() {
             shipping! We provide additional services to make your Canadian and
             international shipments smoother and easier.
           </p>
-          <div className={style.floatB}>
+          <div className={style.floatB} data-aos="fade-up" data-aos-delay={100}>
             <div className={style.leftB}>
-              <Image width={1000} height={1000} src="/images/pexels-elevate-1267338.jpg" alt="" />
+              <Image
+                width={1000}
+                height={1000}
+                src="/images/pexels-elevate-1267338.jpg"
+                alt=""
+              />
             </div>
             <div className={style.rightB}>
               <h3>FastLane Logistics services</h3>
@@ -439,7 +451,11 @@ function Content() {
               </p>
             </div>
           </div>
-          <div className={`${style.floatB} ${style.floatBT}`}>
+          <div
+            className={`${style.floatB} ${style.floatBT}`}
+            data-aos="fade-up"
+            data-aos-delay={200}
+          >
             <div className={style.leftB}>
               <Image width={1000} height={1000} src="/images/wm.jpg" alt="" />
             </div>

@@ -32,6 +32,12 @@
   .trackBox {
     width: 100%;
   }
+  .trackingNum{
+    padding: 2em 1em;
+  }
+  .trackingNum h1{
+    font-size: 20px !important;
+  }
   .introa{
      font-size: 30px !important;
   }
