@@ -1,0 +1,58 @@
+.left {
+  width: 12em;
+  cursor: pointer;
+  height: 4em;
+  display: grid;
+  place-content: center;
+}
+.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.serve {
+  display: flex;
+  padding: 1em;
+  background-color: #133984;
+}
+.serve img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.lefts {
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+.line {
+  padding: 2em;
+  display: flex;
+  gap: 1em;
+  color: white;
+}
+.line h2 {
+  font-size: 19px;
+  font-weight: 700;
+}
+.line p {
+  font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  .serve {
+    flex-direction: column;
+  }
+  .line {
+    flex-direction: column;
+    align-items: start;
+    text-align: center;
+    /* gap: ; */
+  }
+  .line h2 {
+    font-size: 15px;
+  }
+  .line p {
+    font-size: 15px;
+  }
+}
