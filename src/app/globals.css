@@ -1230,11 +1230,14 @@ body {
 
 @media screen and (max-width: 740px) {
   .slider {
-    height: 110vh;
+    height: 60vh;
   }
   .content {
-    top: 50% !important;
+    top: 20% !important;
+    /* background-color: red; */
+    width: 100% !important;
   }
+  
   .arrows {
     right: 5% !important;
   }
@@ -2015,7 +2018,7 @@ body {
   }
   .slider .list .items .content p {
     font-size: 12px;
-    width: 70%;
+    width: 100%;
   }
 
   .numbers {

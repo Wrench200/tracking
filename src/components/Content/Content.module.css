@@ -32,6 +32,19 @@
   .trackBox {
     width: 100%;
   }
+  .introa{
+     font-size: 30px !important;
+  }
+  .benefits h1{
+    font-size: 30px !important;
+  }
+  .floatB{
+    flex-direction:  column !important;
+    padding: 1em;
+  }
+  .leftB{
+    width: 100% !important;
+  }
   .trackBox input {
     width: 50%;
   }
@@ -54,6 +67,9 @@
   align-items: center;
   /* gap: 1em; */
   /* justify-content: space-between; */
+}
+.right h1:first-child{
+  /* display: no; */
 }
 .numbers {
   display: flex;
