@@ -32,23 +32,23 @@
   .trackBox {
     width: 100%;
   }
-  .trackingNum{
+  .trackingNum {
     padding: 2em 1em;
   }
-  .trackingNum h1{
+  .trackingNum h1 {
     font-size: 20px !important;
   }
-  .introa{
-     font-size: 30px !important;
-  }
-  .benefits h1{
+  .introa {
     font-size: 30px !important;
   }
-  .floatB{
-    flex-direction:  column !important;
+  .benefits h1 {
+    font-size: 30px !important;
+  }
+  .floatB {
+    flex-direction: column !important;
     padding: 1em;
   }
-  .leftB{
+  .leftB {
     width: 100% !important;
   }
   .trackBox input {
@@ -74,7 +74,7 @@
   /* gap: 1em; */
   /* justify-content: space-between; */
 }
-.right h1:first-child{
+.right h1:first-child {
   /* display: no; */
 }
 .numbers {
@@ -172,9 +172,8 @@
   .cardTwo {
     padding: 1em;
   }
-  .boxes{
-  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-
+  .boxes {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
   }
   .top {
     width: 100% !important;
@@ -328,21 +327,22 @@
 }
 .leftB {
   width: 80%;
-}.rightB{
+}
+.rightB {
   width: 100%;
   padding: 2em;
   display: flex;
   flex-direction: column;
   gap: 2em;
 }
-.rightB h3{
-font-size: 25px;
-font-weight: 700;
-color: rgb(0, 36, 93);
+.rightB h3 {
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(0, 36, 93);
 }
-.rightB p{
+.rightB p {
   font-size: 18px;
 }
-.floatBT{
+.floatBT {
   flex-direction: row-reverse;
 }

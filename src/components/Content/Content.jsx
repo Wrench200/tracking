@@ -381,7 +381,12 @@ function Content() {
               Canada, to the U.S. or around the world
             </p>
           </div>
-          <div className={style.boxes}>
+          <div
+            className={style.boxes}
+            style={{
+              display: "none",
+            }}
+          >
             <div
               data-aos="zoom-out"
               data-aos-delay={100}
