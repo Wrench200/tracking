@@ -312,7 +312,7 @@ function Content() {
             </p>
           </div>
           <div className={style.boxes}>
-            <div className={style.card} data-aos="fade-right">
+            <div className={style.card} data-aos="fade-up">
               <h2 className={style.step}>Step 1</h2>
               <div className={style.cardImage}>
                 <Image
@@ -346,7 +346,7 @@ function Content() {
                 delivery time via year online customer portal
               </p>
             </div>
-            <div className={style.card} data-aos="fade-left">
+            <div className={style.card} data-aos="fade-up">
               <h2 className={style.step}>Step 3</h2>
 
               <div className={style.cardImage}>
