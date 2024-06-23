@@ -8,6 +8,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 function Page() {
   const navigate = useRouter();
@@ -71,7 +72,7 @@ function Page() {
             </p>
           </div>
           <div className="imageB">
-            <img
+            < Image width={500} height={500}
               src={"/images/pexels-bernard-foss-3049419-4620555.jpg"}
               width={500}
               height={500}
@@ -105,7 +106,7 @@ function Page() {
         </div>
         <div className={style.abouts}>
           <div className={style.lefta}>
-            <img src="/images/bxman.png" alt="" />
+            <Image width={500} height={500} src="/images/bxman.png" alt="" />
           </div>
           <div className={style.righta}>
             <h1>FastLane Global Courier: a success story since 1995</h1>
@@ -177,15 +178,15 @@ function Page() {
             </p>
             <div className={style.stats}>
               <div className={style.statLine}>
-                <img src="/images/st1.png" alt="" />
+                <Image width={500} height={500} src="/images/st1.png" alt="" />
                 <h2>Custom solutions</h2>
               </div>
               <div className={style.statLine}>
-                <img src="/images/st2.png" alt="" />
+                <Image width={500} height={500} src="/images/st2.png" alt="" />
                 <h2>Custom solutions</h2>
               </div>
               <div className={style.statLine}>
-                <img src="/images/st3.png" alt="" />
+                <Image width={500} height={500} src="/images/st3.png" alt="" />
                 <h2>Custom solutions</h2>
               </div>
             </div>
