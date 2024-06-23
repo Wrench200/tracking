@@ -328,7 +328,7 @@ function Content() {
                 delivery driver.
               </p>
             </div>
-            <div className={style.card} data-aos="zoom-out">
+            <div className={style.card} data-aos="fade-up">
               <h2 className={style.step}>Step 2</h2>
 
               <div className={style.cardImage}>
@@ -381,14 +381,9 @@ function Content() {
               Canada, to the U.S. or around the world
             </p>
           </div>
-          <div
-            className={style.boxes}
-            style={{
-              display: "none",
-            }}
-          >
+          <div className={style.boxes}>
             <div
-              data-aos="zoom-out"
+              data-aos="zoom-in"
               data-aos-delay={100}
               className={style.cardDeck}
               onClick={() => navigate.push("/about")}
@@ -401,7 +396,7 @@ function Content() {
               <h1>International Shipping</h1>
             </div>
             <div
-              data-aos="zoom-out"
+              data-aos="zoom-in"
               data-aos-delay={200}
               className={style.cardDeck}
               onClick={() => navigate.push("/about")}
@@ -415,7 +410,7 @@ function Content() {
             </div>
             <div
               className={style.cardDeck}
-              data-aos="zoom-out"
+              data-aos="zoom-in"
               data-aos-delay={300}
             >
               <h1>

@@ -103,19 +103,24 @@ function Navbar({ colors }) {
         <ul className={`${style.mobileMenu} ${menu && style.showMenu}`}>
           <li className={path === "/" && style.active}>
             <Link href={"/"}>HOME</Link>
+            <i class="fas fa-location-arrow    "></i>
           </li>
           <li className={path === "/warehouse" && style.active}>
             <Link href={"/warehouse"}>Warehouse</Link>
+            <i class="fas fa-location-arrow    "></i>
           </li>
           <li className={path === "/logistics" && style.active}>
             <Link href={"/logistics"}>Logistics</Link>
+            <i class="fas fa-location-arrow    "></i>
           </li>
 
           <li className={path === "/about" && style.active}>
             <Link href={"/about"}>About</Link>
+            <i class="fas fa-location-arrow    "></i>
           </li>
           <li className={path === "/contact" && style.active}>
             <Link href={"/contact"}>Contact</Link>
+            <i class="fas fa-location-arrow    "></i>
           </li>
         </ul>
       )}

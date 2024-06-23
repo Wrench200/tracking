@@ -120,8 +120,10 @@
 .boxes {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2em;
+  gap: 2em 0;
   margin: 2em 0;
+  /* width: 50%; */
+  /* display: none; */
 }
 .card {
   background-color: #133984;
@@ -173,6 +175,8 @@
     padding: 1em;
   }
   .boxes {
+    width: 100%;
+    box-sizing: border-box !important;
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
   }
   .top {
@@ -187,6 +191,7 @@
   }
   .card {
     margin: 1em 0;
+    box-sizing: border-box;
   }
   .trackingNum span {
     display: none;
@@ -209,7 +214,8 @@
 }
 
 .cardDeck {
-  width: 100%;
+  box-sizing: border-box;
+  /* width: 100%; */
   /* background: red; */
   height: 400px;
   position: relative;
