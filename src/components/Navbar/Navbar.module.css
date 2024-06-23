@@ -48,7 +48,7 @@
   color: #eb2b2b !important;
 }
 .active a {
-  border-bottom: 3px solid #eb2b2b;
+  border-bottom: 3px solid #eb2b2b !important;
   color: #eb2b2b !important;
 }
 .travel {
@@ -192,4 +192,9 @@
     padding: 1em;
     width: 90%;
   }
+  
+.active a {
+  border-bottom: none !important;
+  color: #eb2b2b !important;
+}
 }

@@ -3,7 +3,7 @@ import { usePathname } from "next/navigation";
 import React, { useEffect, useState, useRef } from "react";
 // import './style.css'; // Assuming you have a style.css file in the same directory
 
-function Banner({ content, img, height }) {
+function Banner({ spanText, h2Text, pText ,img}) {
   const [itemActive, setItemActive] = useState(0);
   const intervalRef = useRef(null);
   const path = usePathname();
@@ -32,37 +32,24 @@ function Banner({ content, img, height }) {
     <div>
       <div
         className="slider"
-        style={{
-          height: height,
-        }}
       >
         <div className="list">
-          {path === "/" ? (
-            <div className={"items active"}>
-              <Image
-                width={1000}
-                height={1000}
-                src={"/images/pexels-albinberlin-906982.jpg"}
-                alt={"image"}
-              />
-              <div className="content">
-                <h2>{"Ship parcels quickly "}</h2>
-                <span>national and worldwide</span>
-                <p>
-                  {
-                    "Our company offers fast, reliable and affordable delivery services around the globe!"
-                  }
-                </p>
-              </div>
+          <div className={"items active"}>
+            <Image
+              width={1000}
+              height={1000}
+              src={img}
+              alt={"image"}
+            />
+            <div className="content">
+              <h2>{h2Text}</h2>
+              <span>{spanText}</span>
+              <p>
+                
+                {pText}
+              </p>
             </div>
-          ) : (
-            <div className={`items active centerab`}>
-              <img src={img} alt={"image"} />
-              <div className="content">
-                <h2>{content}</h2>
-              </div>
-            </div>
-          )}
+          </div>
         </div>
       </div>
     </div>

@@ -7,8 +7,10 @@ import style from "./page.module.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 function Page() {
+  const navigate = useRouter();
   useEffect(() => {
     Aos.init({
       duration: 500, // Animation duration in milliseconds
@@ -17,9 +19,13 @@ function Page() {
   return (
     <>
       <Navbar />
-      <Banner img={"/images/pexels-pixabay-262353.jpg"} content={"ABOUT US"} height={"30vh"}/>
+      <Banner
+        img={"/images/pexels-bernard-foss-3049419-4620555.jpg"}
+        h2Text={"Reliable parcel pick-up and delivery services,"}
+        spanText={" anywhere in the world"}
+      />
       <section className={`central ${style.section}`}>
-        <div className={style.infoC} data-aos="fade-up">
+        {/* <div className={style.infoC} data-aos="fade-up">
           <div className={style.texts}>
             <p
               className="text1"
@@ -72,141 +78,130 @@ function Page() {
               alt="image"
             />
           </div>
-        </div>
-        <div className={style.globe}>
-          <h1>WHY CHOOSE US</h1>
-          <div className={style.modes}>
-            <div className={style.box} data-aos="zoom-out" data-aos-delay={0}>
-              <div className={style.image}>
-                <i class="fa fa-plane" aria-hidden="true"></i>{" "}
-              </div>
-              <h2>Fast And Reliable Service</h2>
-            </div>
-            <div className={style.box} data-aos="zoom-out" data-aos-delay={200}>
-              <div className={style.image}>
-                <i class="fa fa-map" aria-hidden="true"></i>{" "}
-              </div>
-              <h2>Available remotely</h2>
-            </div>
-            <div className={style.box} data-aos="zoom-out" data-aos-delay={400}>
-              <div className={style.image}>
-                <i class="fas fa-clipboard-check    "></i>{" "}
-              </div>
-              <h2>BEST AVAILABLE OPTIONS FOR CLIENTS</h2>
-            </div>
-            <div className={style.box} data-aos="zoom-out" data-aos-delay={600}>
-              <div className={style.image}>
-                <i class="fas fa-money-bill-wave    "></i>{" "}
-              </div>
-              <h2>FLEXIBLE PRICE/SERVICE PACKAGES</h2>
-            </div>
-          </div>
-          <div className={style.globeInfo}>
-            <div class="holding" data-aos="zoom-in">
-              <svg
-                // width=""
-                // height="11/52"
-                viewBox="0 0 1179 1152"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M334.326 882.433C286.784 840.832 249.565 788.747 225.608 730.292C201.651 671.837 191.612 608.613 196.284 545.613C200.956 482.612 220.21 421.56 252.528 367.279C284.845 312.997 329.339 266.972 382.497 232.838C435.656 198.704 496.022 177.396 558.828 170.597C621.635 163.798 685.162 171.694 744.393 193.661C803.625 215.629 856.938 251.066 900.123 297.174C943.307 343.282 975.181 398.799 993.227 459.34"
-                  stroke="#34bcbc"
-                ></path>
-                <path
-                  d="M1004.79 648.64C1013.37 664.833 1015.93 679.803 1012.64 693.203C1009.34 706.602 1000.18 718.513 985.151 728.551C955.073 748.642 902.782 760.368 833.826 762.389C764.893 764.409 681.994 756.653 594.053 739.949C506.113 723.245 416.474 698.228 334.785 667.593C253.093 636.957 182.462 601.867 130.485 566.107C104.497 548.227 83.6757 530.526 68.4327 513.478C53.1864 496.426 43.5431 480.052 39.8701 464.829C36.2015 449.624 38.5536 435.84 46.684 423.775C54.8252 411.694 68.7879 401.296 88.4086 392.947C127.656 376.246 187.89 368.446 262.665 370.429"
-                  stroke="#fcbe80"
-                ></path>
-                <path
-                  d="M744.537 203.285C799.611 142.519 849.675 104 888.524 92.3818C907.933 86.5773 924.054 87.6324 936.552 95.1925C949.055 102.756 958.037 116.891 963.03 137.469C973.02 178.646 966.532 243.539 944.284 324.159C922.042 404.757 885.047 497.461 837.876 590.785C790.707 684.108 735.44 773.941 678.925 849.156C622.405 924.378 567.139 981.646 519.979 1013.9C496.398 1030.02 475.396 1039.52 457.537 1042.34C439.696 1045.16 425.016 1041.31 413.989 1030.79C402.942 1020.24 395.739 1003.16 392.55 980.179C389.362 957.207 390.194 928.403 395.163 894.489"
-                  stroke="#464f8e"
-                ></path>
-                <path
-                  d="M838.407 907.01C820.956 952.118 791.357 980.223 752.688 988.55C713.993 996.883 667.503 985.135 617.98 954.392C568.464 923.652 517.759 875.063 471.093 813.609C424.428 752.157 383.499 680.076 352.52 604.785C321.541 529.492 301.636 453.721 294.846 385.27C288.056 316.813 294.634 258.189 313.854 215.404C333.065 172.639 364.201 147.259 404.047 141.774C443.925 136.285 491.182 150.907 540.967 184.251"
-                  stroke="#f09cbc"
-                ></path>
-              </svg>
-              <div class="rotate-globe"></div>
-            </div>
-            <ul class="about-list" data-aos="fade-up">
-              <li class="about-item">
-                <div class="about-icon">
-                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                </div>
-
-                <p class="about-text">
-                  Go beyond logistics, make the world go round and revolutionize
-                  business.
-                </p>
-              </li>
-
-              <li class="about-item">
-                <div class="about-icon">
-                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                </div>
-
-                <p class="about-text">
-                  Logistics through innovation, dedication, and technology.
-                  ready, set, done.
-                </p>
-              </li>
-
-              <li class="about-item">
-                <div class="about-icon">
-                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                </div>
-
-                <p class="about-text">
-                  We take pride in serving our customers safely. together with
-                  passion.
-                </p>
-              </li>
-
-              <li class="about-item">
-                <div class="about-icon">
-                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                </div>
-
-                <p class="about-text">
-                  Imagination what we can easily see is only a small percentage.
-                </p>
-              </li>
-
-              <li class="about-item">
-                <div class="about-icon">
-                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                </div>
-
-                <p class="about-text">
-                  Quality never goes out of style. safety, quality,
-                  professionalism.
-                </p>
-              </li>
-
-              <li class="about-item">
-                <div class="about-icon">
-                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                </div>
-
-                <p class="about-text">
-                  The quality shows in every move we make where business lives.
-                </p>
-              </li>
-            </ul>
+        </div> */}
+        <div className={style.floatB}>
+          <h1>
+            Your Courier Company for Deliveries within your local enviroment and
+            Abroad
+          </h1>
+          <p>
+            At Globex Worldwide Courier, each package is handled with meticulous
+            care, guaranteeing complete satisfaction both locally and globally.
+            Our commitment goes beyond mere shipping; we craft seamless delivery
+            experiences customized to your specific needs.
+          </p>
+          <p>
+            Our secret? A team of passionate and dedicated experts, working
+            diligently to make sure your shipments reach their destination
+            safely and on time. We’re here to keep our promises, and help you do
+            the same.
+          </p>
+          <div className={style.buttons}>
+            <button onClick={() => navigate.push("/contact")}>
+              CONTACT US TODAY
+            </button>
+            <Link href={""}>123-456-789</Link>
           </div>
         </div>
-        <p className={style.conclude}>
-          We are committed to keeping our promises and achieving our service
-          aims, but we are also realistic and recognize that things {"don’t"}{" "}
-          always go according to plan. If you are not happy with the service or
-          advice you have received we would invite you to contact our Customer
-          Service team who will endeavor to resolve your complaint in a timely
-          manner. In the unfortunate event that you are not satisfied with the
-          outcome, you can contact our Customer Care team at{" "}
-          <Link href="/contact">contact@hyperluxegloballogistic.com</Link>
-           We will investigate further.
-        </p>
+        <div className={style.abouts}>
+          <div className={style.lefta}>
+            <img src="/images/bxman.png" alt="" />
+          </div>
+          <div className={style.righta}>
+            <h1>FastLane Global Courier: a success story since 1995</h1>
+            <p>
+              Founded in the dynamic city of Montreal in 1995, Globex Worldwide
+              Courier rose rapidly through the ranks to become a benchmark in
+              the world of express delivery.
+            </p>
+            <p>
+              With more than 25 years of experience, we deliver to more than 220
+              destinations worldwide. Our name rhymes with reliability and
+              efficiency while our values include honouring our commitments and
+              respecting the well-being of our team.
+            </p>
+            <p>
+              At Globex, we adapt to your shipping needs and provide premium
+              courier services to a variety of industries including
+              manufacturing, textiles, automotive, furniture, engineering and
+              architecture.
+            </p>
+            <p>
+              Our pride and joy? We are the official carriers for prestigious
+              institutions such as Quebec universities, the Quebec government,
+              the Quebec Health Network and much more. We’re also recognized for
+              our expertise in transporting works of art, and will guarantee the
+              safety of your most precious possessions.
+            </p>
+          </div>
+        </div>
+      </section>
+      <h1 className={style.introa}>Reliable services, satisfied customers</h1>
+      <section className={style.detailedInfo}>
+        <section className={`central`}>
+          <div className={style.topLine}>
+            <div className={style.topBox}>
+              <h1>7M+</h1>
+              <p>orders and still as passionate as ever.</p>
+            </div>
+            <div className={style.topBox}>
+              <h1>+95%</h1>
+              <p>on-time delivery – Your time matters.</p>
+            </div>
+            <div className={style.topBox}>
+              <h1>200+</h1>
+              <p>
+                dynamic delivery drivers in action in Montreal and Quebec City.
+              </p>
+            </div>
+            <div className={style.topBox}>
+              <h1>194772+</h1>
+              <p>satisfied partners – Join the family!</p>
+            </div>
+            <div className={style.topBox}>
+              <h1>4.8/5</h1>
+              <p>on Google – Your trust in our services makes us proud.</p>
+            </div>
+          </div>
+          <div className={style.boxintro}>
+            <h1>
+              Fastlane Global Courier: overcoming challenges with adaptable
+              solutions
+            </h1>
+            <p>
+              Your challenge is our mission! At Globex, we understand that every
+              delivery is unique. We adapt to your specific shipping needs with
+              custom courier solutions. Our team of experts is ready to meet the
+              transport and delivery requirements of both standard and
+              non-standard packages.
+            </p>
+            <div className={style.stats}>
+              <div className={style.statLine}>
+                <img src="/images/st1.png" alt="" />
+                <h2>Custom solutions</h2>
+              </div>
+              <div className={style.statLine}>
+                <img src="/images/st2.png" alt="" />
+                <h2>Custom solutions</h2>
+              </div>
+              <div className={style.statLine}>
+                <img src="/images/st3.png" alt="" />
+                <h2>Custom solutions</h2>
+              </div>
+            </div>
+            <h3>
+              fastlane is more than a courier company – we’re your strategic
+              partner for logistics and freight forwarding. Contact us and
+              discover the Globex difference.
+            </h3>
+            <div className={style.buttons}>
+              <button onClick={() => navigate.push("/contact")}>
+                CONTACT US TODAY
+              </button>
+              <Link href={""}>123-456-789</Link>
+            </div>
+          </div>
+        </section>
       </section>
       <Footer />
     </>

@@ -26,18 +26,23 @@
   display: grid;
   place-content: center;
 }
+.right{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
 .line {
   padding: 2em;
   display: flex;
-  gap: 1em;
+  align-items: start;
   color: white;
 }
 .line h2 {
-  font-size: 19px;
+  font-size: 15px;
   font-weight: 700;
 }
 .line p {
-  font-size: 20px;
+  font-size: 18px;
 }
 @media screen and (max-width: 768px) {
   .serve {
@@ -55,4 +60,5 @@
   .line p {
     font-size: 15px;
   }
+  
 }

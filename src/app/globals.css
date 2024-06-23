@@ -1237,7 +1237,7 @@ body {
     /* background-color: red; */
     width: 100% !important;
   }
-  
+
   .arrows {
     right: 5% !important;
   }
@@ -2036,6 +2036,13 @@ body {
   }
 }
 @media screen and (max-width: 540px) {
+  .slider .content {
+    /* background-color: red; */
+    min-width: 90%;
+  }
+  .slider .content h2{
+    font-weight: 900 !important;
+  }
   .log {
     padding: 0 1em;
     margin: 2em 0;

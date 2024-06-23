@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import 'animate.css'
+import "animate.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "owl.carousel/dist/assets/owl.carousel.css";
@@ -27,10 +27,17 @@ export default function Home() {
 
   return (
     <>
-      <Navbar/>
-      <Banner />
+      <Navbar />
+      <Banner
+        h2Text={"Ship parcels quickly "}
+        pText={
+          "Our company offers fast, reliable and affordable delivery services around the globe!"
+        }
+        spanText={"national and worldwide"}
+        img={"/images/pexels-albinberlin-906982.jpg"}
+      />
       <Content />
-      <Footer/>
+      <Footer />
     </>
   );
 }

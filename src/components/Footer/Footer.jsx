@@ -97,13 +97,11 @@ function Footer() {
                   </li>
 
                   <li>
-                    <Link href="/#service" class="footer-link">
-                      Services
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link href="#" class="footer-link">
+                    <Link
+                      href="#
+                    /logistics"
+                      class="footer-link"
+                    >
                       Blog
                     </Link>
                   </li>
@@ -127,25 +125,25 @@ function Footer() {
                   </li>
 
                   <li>
-                    <Link href="/#service" class="footer-link">
+                    <Link href="/logistics" class="footer-link">
                       Air Freight
                     </Link>
                   </li>
 
                   <li>
-                    <Link href="/#service" class="footer-link">
+                    <Link href="/logistics" class="footer-link">
                       Ocean Freight
                     </Link>
                   </li>
 
                   <li>
-                    <Link href="/#service" class="footer-link">
+                    <Link href="/logistics" class="footer-link">
                       Road Freight
                     </Link>
                   </li>
 
                   <li>
-                    <Link href="/#service" class="footer-link">
+                    <Link href="#" class="footer-link">
                       Packaging
                     </Link>
                   </li>
