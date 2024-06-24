@@ -261,7 +261,7 @@ export default function Home() {
               <i class="fa fa-bars" aria-hidden="true"></i>
             </li>
             <li>
-              <Link href={"https://swiftsealogistics.vercel.app/"}>
+              <Link href={"https://fastlaneglobal.vercel.app/"}>
                 <button>View Site</button>
               </Link>
             </li>

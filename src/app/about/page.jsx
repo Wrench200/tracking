@@ -21,7 +21,6 @@ function Page() {
     <>
       <Navbar />
       <Banner
-        
         img={"/images/pexels-bernard-foss-3049419-4620555.jpg"}
         h2Text={"Reliable parcel pick-up and delivery services,"}
         spanText={" anywhere in the world"}
@@ -87,7 +86,7 @@ function Page() {
             Abroad
           </h1>
           <p>
-            At Globex Worldwide Courier, each package is handled with meticulous
+            At FastLane Global Courier, each package is handled with meticulous
             care, guaranteeing complete satisfaction both locally and globally.
             Our commitment goes beyond mere shipping; we craft seamless delivery
             experiences customized to your specific needs.
@@ -112,7 +111,7 @@ function Page() {
           <div className={style.righta}>
             <h1>FastLane Global Courier: a success story since 1995</h1>
             <p>
-              Founded in the dynamic city of Montreal in 1995, Globex Worldwide
+              Founded in the dynamic city of Montreal in 1995, FastLane Global
               Courier rose rapidly through the ranks to become a benchmark in
               the world of express delivery.
             </p>
@@ -123,7 +122,7 @@ function Page() {
               respecting the well-being of our team.
             </p>
             <p>
-              At Globex, we adapt to your shipping needs and provide premium
+              At FastLane, we adapt to your shipping needs and provide premium
               courier services to a variety of industries including
               manufacturing, textiles, automotive, furniture, engineering and
               architecture.
@@ -171,10 +170,10 @@ function Page() {
               solutions
             </h1>
             <p>
-              Your challenge is our mission! At Globex, we understand that every
-              delivery is unique. We adapt to your specific shipping needs with
-              custom courier solutions. Our team of experts is ready to meet the
-              transport and delivery requirements of both standard and
+              Your challenge is our mission! At FastLane, we understand that
+              every delivery is unique. We adapt to your specific shipping needs
+              with custom courier solutions. Our team of experts is ready to
+              meet the transport and delivery requirements of both standard and
               non-standard packages.
             </p>
             <div className={style.stats}>
@@ -192,9 +191,9 @@ function Page() {
               </div>
             </div>
             <h3>
-              fastlane is more than a courier company – we’re your strategic
+              Fastlane is more than a courier company – we’re your strategic
               partner for logistics and freight forwarding. Contact us and
-              discover the Globex difference.
+              discover the FastLane difference.
             </h3>
             <div className={style.buttons}>
               <button onClick={() => navigate.push("/contact")}>

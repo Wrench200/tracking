@@ -547,8 +547,7 @@ function Content() {
               </div>
               <p>
                 Bruce and Jet have landed safely in our arms in San Francisco. I
-                just wanted to thank YOU and the entire Switch Express Mail
-                Service for helping us with this process from EU to America. I
+                just wanted to thank YOU and the entire FastLane Global for helping us with this process from EU to America. I
                 especially appreciate how easy you made it for us when we had to
                 reschedule the flight with such short notice because of my
                 husband’s emergency knee surgery. Thank you for making it so
@@ -603,7 +602,7 @@ function Content() {
                 />
               </div>
               <p>
-                Switch Express Mail Service brought my Car from USA to me in
+              FastLane Global Service brought my Car from USA to me in
                 Australia after I was transferred. It saved me a lot of money
                 buying a new car.
               </p>
@@ -629,7 +628,7 @@ function Content() {
                 />
               </div>
               <p>
-                I have been using Swiftsea Logistics for my international
+                I have been using FastLane Global for my international
                 shipping needs, and I could not be more satisfied. Their service
                 is top-notch, with prompt deliveries and excellent customer
                 support. The tracking system is reliable, keeping me informed at

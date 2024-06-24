@@ -29,11 +29,11 @@ function Page() {
       <div className={style.floatB}>
         <h1>
           Experience seamless global logistics and shipping solutions with
-          Globex
+          FastLane
         </h1>
 
         <p>
-          At Globex, our comprehensive services cover international freight
+          At FastLane, our comprehensive services cover international freight
           forwarding via air, sea, or land, ensuring reliability and efficiency
           for all your shipments.
         </p>
@@ -46,7 +46,7 @@ function Page() {
         </p>
         <p>
           Trust us to strengthen your supply chain, facilitating seamless
-          shipments across Canada, the U.S., and worldwide. Partner with Globex
+          shipments across Canada, the U.S., and worldwide. Partner with FastLane
           for unparalleled logistics expertise and service excellence.{" "}
         </p>
       </div>
@@ -58,7 +58,7 @@ function Page() {
               Whether you require cross-border shipments, streamlined pallet
               shipping services, parcel delivery within Canada, shipping full or
               partial loads to the U.S., or simplified international shipping
-              solutions, Globex is your trusted partner
+              solutions, FastLane is your trusted partner
             </p>
             <p>
               Our team of logistics professionals is dedicated to designing
@@ -66,7 +66,7 @@ function Page() {
               needs. From selecting the ideal mode of transport to ensuring
               timely delivery, we are committed to providing you with efficient
               and reliable solutions for all your shipping requirements. Partner
-              with Globex for seamless international shipping and logistics
+              with FastLane for seamless international shipping and logistics
               services that exceed your expectations.
             </p>
           </div>
@@ -200,18 +200,18 @@ function Page() {
                 shipping services . Our logistics consultants will be happy to
                 discuss your specific requirements, share insights, and answer
                 any questions you may have. With our commitment to excellence
-                and customer satisfaction, you can trust Globex to deliver
+                and customer satisfaction, you can trust FastLane to deliver
                 reliable and efficient solutions tailored to your business
                 needs.
               </p>
               <div>
                 <span>
-                  Not what you’re looking for? At Globex, we offer a full range
+                  Not what you’re looking for? At FastLane, we offer a full range
                   of services, including same-day delivery and international
                   courier services.
                 </span>
                   <p>
-                    Whatever your shipping requirements may be, Globex has the
+                    Whatever your shipping requirements may be, FastLane has the
                     expertise and resources to meet them with precision and
                     efficiency.
                   </p>

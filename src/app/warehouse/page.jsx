@@ -30,7 +30,7 @@ function Page() {
         <h1>Reliable and Affordable International Shipping Services</h1>
 
         <p>
-          Globex Worldwide Courier offers swift, dependable international
+        FastLane Global Courier offers swift, dependable international
           shipping at competitive rates. With a legacy of over 25 years, our
           extensive network reaches across more than 220 countries and
           territories. Rest assured, your shipment is guaranteed to reach its
@@ -47,7 +47,7 @@ function Page() {
         </p>
         <p>
           Trust us to strengthen your supply chain, facilitating seamless
-          shipments across Canada, the U.S., and worldwide. Partner with Globex
+          shipments across Canada, the U.S., and worldwide. Partner with FastLane
           for unparalleled logistics expertise and service excellence.{" "}
         </p>
       </div>
@@ -55,13 +55,13 @@ function Page() {
         <div className="central">
           <div className={style.logistics}>
             <h1>
-              Elevated Import and Export all-inclusive solutions: Trust Globex
+              Elevated Import and Export all-inclusive solutions: Trust FastLane
               for your Worldwide Deliveries
             </h1>
             <p style={{
               margin:"3em 0"
             }}>
-              Globex Worldwide Courier provides express international shipping
+             FastLane Global Courier provides express international shipping
               services for individual parcels as well as grouped shipments. Our
               extensive network encompasses numerous multiple countries offering
               both export and import express delivery solutions.
@@ -79,7 +79,7 @@ function Page() {
               </div>
               <div className={style.cardbot}>
                 <p>
-                  The Globex Express Export Service guarantees fast, on-time
+                  The FastLane Express Export Service guarantees fast, on-time
                   delivery to over 220 countries. Our competitive rates include
                   customs clearance.
                 </p>
@@ -94,7 +94,7 @@ function Page() {
               </div>
               <div className={style.cardbot}>
                 <p>
-                  The Globex Express Plus Export Service assures swift delivery
+                  The FastLane Express Plus Export Service assures swift delivery
                   to over 220 countries including customs clearance and backed
                   by our a money-back satisfaction guarantee. Our Express Plus
                   service guarantees delivery on the scheduled day and time.
@@ -113,7 +113,7 @@ function Page() {
                 <h2>Tailor-made to your needs</h2>
 
                 <p>
-                  The Globex Express Import Export Service provides secure and
+                  The FastLane Express Import Export Service provides secure and
                   dependable international shipments from around the world.
                   Customs clearance fees are included.
                 </p>
@@ -123,11 +123,11 @@ function Page() {
           <div className="central">
             <div className={style.botInfo}>
               <h1>
-                Globex Courier: your shipping solution for international parcel
+                FastLane Global Courier: your shipping solution for international parcel
                 delivery
               </h1>
               <p>
-                Rely on Globex Worldwide Courier for express international
+                Rely on FastLane Global Courier for express international
                 shipping. Our premium customer service encompasses express
                 shipping solutions within Canada, to the U.S. and
                 internationally to over 220 countries worldwide. Select from a
@@ -138,12 +138,12 @@ function Page() {
               </p>
               <div>
                 <span>
-                  Not what you’re looking for? At Globex, we offer a full range
+                  Not what you’re looking for? At FastLane, we offer a full range
                   of services, including same-day delivery and international
                   courier services.
                 </span>
                 <p>
-                  Whatever your shipping requirements may be, Globex has the
+                  Whatever your shipping requirements may be, FastLane has the
                   expertise and resources to meet them with precision and
                   efficiency.
                 </p>
@@ -182,7 +182,7 @@ function Page() {
               </div>
               <div className={style.cardbot}>
                 <p>
-                  Globex Worldwide Courier offers global coverage and custom
+                FastLane Global Courier offers global coverage and custom
                   solutions for international parcel shipments. We treat each
                   package with care and precision.{" "}
                 </p>
@@ -205,16 +205,16 @@ function Page() {
           </div>
           <div className="central">
             <div className={style.botInfo}>
-              <h1>Simplify your international shipping with Globex </h1>
+              <h1>Simplify your international shipping with FastLane </h1>
               <p>
                 Contact our team for a quick estimate or to find out more about
                 our services.{" "}
               </p>
               <div>
                 <p>
-                  Simplify your international shipping with Globex Contact our
+                  Simplify your international shipping with FastLane Contact our
                   team for a quick estimate or to find out more about our
-                  services. Count on Globex Worldwide Courier for express
+                  services. Count on FastLane Global Worldwide Courier for express
                   international delivery of parcels, envelopes or other
                   specialized freight. Call <Link href={""}>514-739-3977</Link>{" "}
                   to open an account today. Let us leverage our international
