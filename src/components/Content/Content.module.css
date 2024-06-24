@@ -120,7 +120,7 @@
 .boxes {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2em 0;
+  gap: 2em;
   margin: 2em 0;
   /* width: 50%; */
   /* display: none; */
@@ -176,6 +176,8 @@
   }
   .boxes {
     width: 100%;
+    gap: 2em 0;
+
     box-sizing: border-box !important;
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
   }
