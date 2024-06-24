@@ -55,10 +55,10 @@
 }
 .left {
   background: url("/images/pexels-janamparikh-15947631.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
   height: 400px;
   /* background-color: red; */
   box-sizing: border-box;
