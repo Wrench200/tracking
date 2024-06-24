@@ -88,7 +88,7 @@ export const POST = async (req) => {
       productWeight
     );
 
-    const trackingNumber = `SWIFTL-${generateNumericId(14)}`;
+    const trackingNumber = `FSLG-${generateNumericId(14)}`;
 
     const foundShipment = await Shipmenttwo.findOne({ trackingNumber });
     if (foundShipment) {
@@ -98,7 +98,7 @@ export const POST = async (req) => {
       );
     }
 
-    const newShipment = new Shipment({
+    const newShipment = new Shipmenttwo({
       sender,
       senderEmail,
       senderNumber,

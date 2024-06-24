@@ -20,7 +20,7 @@
 .aside li {
   cursor: pointer !important;
 }
-.aside li:hover{
+.aside li:hover {
   background-color: #85888d;
 }
 .details {
