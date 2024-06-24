@@ -58,7 +58,9 @@ function Page() {
               Elevated Import and Export all-inclusive solutions: Trust Globex
               for your Worldwide Deliveries
             </h1>
-            <p>
+            <p style={{
+              margin:"3em 0"
+            }}>
               Globex Worldwide Courier provides express international shipping
               services for individual parcels as well as grouped shipments. Our
               extensive network encompasses numerous multiple countries offering
