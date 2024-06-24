@@ -3,7 +3,7 @@ import { usePathname } from "next/navigation";
 import React, { useEffect, useState, useRef } from "react";
 // import './style.css'; // Assuming you have a style.css file in the same directory
 
-function Banner({ spanText, h2Text, pText ,img}) {
+function Banner({ spanText, h2Text, pText, img, button,location }) {
   const [itemActive, setItemActive] = useState(0);
   const intervalRef = useRef(null);
   const path = usePathname();
@@ -30,24 +30,17 @@ function Banner({ spanText, h2Text, pText ,img}) {
 
   return (
     <div>
-      <div
-        className="slider"
-      >
+      <div className="slider">
         <div className="list">
           <div className={"items active"}>
-            <Image
-              width={1000}
-              height={1000}
-              src={img}
-              alt={"image"}
-            />
+            <Image width={1000} height={1000} src={img} alt={"image"} />
             <div className="content">
               <h2>{h2Text}</h2>
               <span>{spanText}</span>
-              <p>
-                
-                {pText}
-              </p>
+              <p>{pText}</p>
+              <button onClick={() => navigate.push(`${location}`)}>
+                {button}
+              </button>
             </div>
           </div>
         </div>

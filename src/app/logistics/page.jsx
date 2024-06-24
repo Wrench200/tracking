@@ -6,6 +6,7 @@ import React, { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import style from "./page.module.css";
+import Link from "next/link";
 
 function Page() {
   const [stage, setStage] = useState(0);
@@ -18,100 +19,213 @@ function Page() {
     <>
       <Navbar />
       <Banner
-        img={"/images/pexels-olly-3769138.jpg"}
-        content={"LOGISTICS"}
-        height={"30vh"}
+        location={"/contact"}
+        // button={"CONTACT US"}
+        img={"/images/pexels-dibert-1117211.jpg"}
+        h2Text={"Logistics solutions for an efficient,"}
+        spanText={"reliable international supply chain"}
+        pText={"Find out what we can do for your business!"}
       />
-      <section>
-        <div className="central log">
-          <p
-            style={{
-              fontSize: "12px",
-              margin: "1em 0",
-            }}
-          >
-            If you require a quality Road, Air Freight, Rail Freight or Oceanic
-            Freight Services ( Road, Air, Rail, Water Transport) logistics
-            provider that abides to your precise shipping needs with reliable,
-            time reducing and cost effective results, then the services of
-            Europa Lieferung Express is exactly what you need.
-          </p>
-          <p
-            style={{
-              fontSize: "12px",
-              margin: "1em 0",
-            }}
-          >
-            We already know that you require optimum efficiency and
-            professionalism for your Inland Transportation needs, be it your
-            budgets, location or time constraints. So we supply you with an
-            array of streamlined features when you want the most reliable and
-            cost effective domestic trucking and inland transportation services
-            that spans every city in the World. Hence, you can look forward to
-            enlisting the help of a high quality and efficient inland road
-            freight partner that acts as an all-in-one solution for all of your
-            logistics requirements.
-          </p>
+      <div className={style.floatB}>
+        <h1>
+          Experience seamless global logistics and shipping solutions with
+          Globex
+        </h1>
 
-          <div className={style.imageBoxes}>
-            <div data-aos="zoom-in">
-              <img
-                src="/images/pexels-tima-miroshnichenko-6169057.jpg"
-                alt=""
-              />
+        <p>
+          At Globex, our comprehensive services cover international freight
+          forwarding via air, sea, or land, ensuring reliability and efficiency
+          for all your shipments.
+        </p>
+        <p>
+          Benefit from our tailored and cost-effective turnkey solutions,
+          meticulously crafted to address even the most intricate logistics
+          needs. Whether you require Full Container Load (FCL) or Less than
+          Container Load (LCL) options, our flexible approach guarantees secure,
+          reliable, and swift freight forwarding services.
+        </p>
+        <p>
+          Trust us to strengthen your supply chain, facilitating seamless
+          shipments across Canada, the U.S., and worldwide. Partner with Globex
+          for unparalleled logistics expertise and service excellence.{" "}
+        </p>
+      </div>
+      <section>
+        <div className="central">
+          <div className={style.logistics}>
+            <h1>Our international shipping and logistics service</h1>
+            <p>
+              Whether you require cross-border shipments, streamlined pallet
+              shipping services, parcel delivery within Canada, shipping full or
+              partial loads to the U.S., or simplified international shipping
+              solutions, Globex is your trusted partner
+            </p>
+            <p>
+              Our team of logistics professionals is dedicated to designing
+              custom freight forwarding services tailored to your specific
+              needs. From selecting the ideal mode of transport to ensuring
+              timely delivery, we are committed to providing you with efficient
+              and reliable solutions for all your shipping requirements. Partner
+              with Globex for seamless international shipping and logistics
+              services that exceed your expectations.
+            </p>
+          </div>
+        </div>
+        <div className={style.freightInfo}>
+          <div className={style.freight}>
+            <div className={style.fCard}>
+              <div className={style.topCard}>
+                <div className={style.icon}>
+                  <img src="/images/plane.svg" alt="" />
+                </div>
+                <h2>Air Freight service</h2>
+              </div>
+              <div className={style.cardbot}>
+                <h2>2 options for intenational air freight</h2>
+                <ul>
+                  <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <p>Door-to-door delivery</p>
+                  </li>
+                  <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <p>Door-to-airport service</p>
+                  </li>
+                </ul>
+                <h2>Services included</h2>
+                <ul>
+                  <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <p>Custom Clearance</p>
+                  </li>
+                  <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <p>ATA carnet (temoorary admision)</p>
+                  </li>
+                  <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <p>Legalization of Certificate of Origin</p>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div data-aos="zoom-out">
-              <i class="fas fa-boxes    "></i>
-              <h2>Packaging</h2>
-              <p>
-                We have all packaging ability for your goods to make sure all is
-                save and sound with your cargo .Here we are the ones to make it
-                happen
-              </p>
+            <div className={style.fCard}>
+              <div className={style.topCard}>
+                <div className={style.icon}>
+                  <img src="/images/ship.svg" alt="" />
+                </div>
+                <h2>Ocean Freight service</h2>
+              </div>
+              <div className={style.cardbot}>
+                <h2>2 options for intenational ocean freight</h2>
+                <ul>
+                  <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <p>Full Container Load (FCL)</p>
+                  </li>
+                  <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <p>Less than Container Load (LCL)</p>
+                  </li>
+                </ul>
+                <h2>Services included</h2>
+                <ul>
+                  <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <p>Custom Clearance</p>
+                  </li>
+                  <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <p>Pick-up and delivery</p>
+                  </li>
+                  <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <p>Moving</p>
+                  </li>
+                  <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <p>Legalization of Certificate of Origin</p>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div data-aos="zoom-in">
-              <img
-                src="/images/pexels-carloscruz-artegrafia-172084181-11087837.jpg"
-                alt=""
-              />
-            </div>
-            <div data-aos="zoom-out">
-              <i class="fa fa-binoculars" aria-hidden="true"></i>
-              <h2>Expertise services</h2>
-              <p>
-                Always availale to make sure all goes well with your package as
-                you can talk with our agents for your solution
-              </p>
-            </div>
-            <div data-aos="zoom-in">
-              <img src="/images/pexels-pixabay-358319.jpg" alt="" />
-            </div>
-            <div data-aos="zoom-out">
-              <div className="div">
-                <i class="fas fa-truck-loading    "></i>
-                <h2>transportation</h2>
-                <p>
-                  We take what you want to where ever you want us to. Our job is
-                  to transport so we love doing it for you
-                </p>
+            <div className={style.fCard}>
+              <div className={style.topCard}>
+                <div className={style.icon}>
+                  <img src="/images/truck.svg" alt="" />
+                </div>
+                <h2>Land Freight service</h2>
+              </div>
+              <div className={style.cardbot}>
+                <h2>4 options for ground transportation</h2>
+                <ul>
+                  <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <p>Truckload (TL)</p>
+                  </li>
+                  <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <p>Less Than Truckload (LTL)</p>
+                  </li>
+                  <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <p>Pallet shipping</p>
+                  </li>
+                  <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <p>Solution for oversized shipments</p>
+                  </li>
+                </ul>
+                <h2>Services included</h2>
+                <ul>
+                  <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <p>Custom Clearance</p>
+                  </li>
+
+                  <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <p>Legalization of Certificate of Origin</p>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-          <p
-            style={{
-              textAlign: "center",
-              fontSize: "10px",
-              margin: "2em 0",
-            }}
-          >
-            Here are the things we do when it comes to Europa Lieferung Express.
-            Our customers classify the company to a high range for our prompt
-            and reliable services in any aspect of shipping services, holding a
-            considerable advantage in our experienced staff, the use of our own
-            equipment, as well as the justifying use of port equipment for
-            loading & discharging RO/RO (roll-on / roll-off), Container and Bulk
-            Vessels.
-          </p>
+          <div className="central">
+            <div className={style.botInfo}>
+              <h1>Logistics brokers and advisors at your service!</h1>
+              <p>
+                Would you like more information about our logistics and shipping
+                services? Contact us today to learn more about our logistics and
+                shipping services . Our logistics consultants will be happy to
+                discuss your specific requirements, share insights, and answer
+                any questions you may have. With our commitment to excellence
+                and customer satisfaction, you can trust Globex to deliver
+                reliable and efficient solutions tailored to your business
+                needs.
+              </p>
+              <div>
+                <span>
+                  Not what you’re looking for? At Globex, we offer a full range
+                  of services, including same-day delivery and international
+                  courier services.
+                </span>
+                  <p>
+                    Whatever your shipping requirements may be, Globex has the
+                    expertise and resources to meet them with precision and
+                    efficiency.
+                  </p>
+              </div>
+              <div className={style.buttons}>
+                <button onClick={() => navigate.push("/contact")}>
+                  CONTACT US
+                </button>
+                <Link href={""}>123-456-789</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="central ">
           <div className={style.choice}>
             <div className={style.left}></div>
             <div className={style.right}>
@@ -263,8 +377,9 @@ function Page() {
           </div>
           <p
             style={{
-              fontSize: "10px",
+              fontSize: "13px",
               margin: "1em 0",
+              padding: "1em",
             }}
           >
             With supply chains becoming ever more complex and global, a
@@ -274,8 +389,9 @@ function Page() {
           </p>
           <p
             style={{
-              fontSize: "10px",
+              fontSize: "12px",
               margin: "1em 0",
+              padding: "1em",
             }}
           >
             To assist clients with this challenge, Europa Lieferung Express have

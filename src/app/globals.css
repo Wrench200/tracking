@@ -2067,3 +2067,8 @@ body {
     width: 25rem;
   }
 }
+.slider .content button{
+ background-color: #eb2b2b;
+ padding: 1em 3em;
+ cursor: pointer;
+}
