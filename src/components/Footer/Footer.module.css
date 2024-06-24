@@ -21,12 +21,21 @@
   object-fit: cover;
   display: block;
 }
+.line {
+  /* background-color: green; */
+}
+.serve{
+  /* background-color: blue; */
+}
 .lefts {
-  width: 100%;
+  /* width: 100%; */
   display: grid;
+  /* background-color: red; */
+  margin: 0 auto;
+  padding: 2em;
   place-content: center;
 }
-.right{
+.right {
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -60,5 +69,4 @@
   .line p {
     font-size: 15px;
   }
-  
 }

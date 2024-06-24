@@ -13,9 +13,9 @@ function Footer() {
       <div className={style.serve}>
         <div className={style.line}>
           <div className={style.lefts}>
-            <img src="/images/bx.svg" alt="" />
+            <Image width={500} height={500} src="/images/bx.svg" alt="" />
           </div>
-          <div className={style.right}>
+          <div className={style.rights}>
             <h2>Full Range Services</h2>
             <p>
               Your all-in-one delivery solution: Local, National, USA,
@@ -25,9 +25,9 @@ function Footer() {
         </div>
         <div className={style.line}>
           <div className={style.lefts}>
-            <img src="/images/lock.svg" alt="" />
+            <Image width={500} height={500} src="/images/lock.svg" alt="" />
           </div>
-          <div className={style.right}>
+          <div className={style.rights}>
             <h2>Total Status Visibility of Your Shipment</h2>
             <p>
               Real-time tracking of eachFastLane shipment offers complete
@@ -38,9 +38,9 @@ function Footer() {
 
         <div className={style.line}>
           <div className={style.lefts}>
-            <img src="/images/support.svg" alt="" />
+            <Image width={500} height={500} src="/images/support.svg" alt="" />
           </div>
-          <div className={style.right}>
+          <div className={style.rights}>
             <h2>24/7 Customer Support</h2>
             <p>Quick response guaranteed around the clock.</p>
           </div>
@@ -56,7 +56,7 @@ function Footer() {
                     className={style.left}
                     onClick={() => navigate.push("/")}
                   >
-                    <img
+                    <Image
                       src={"/images/Screenshot__217_-removebg-preview.png"}
                       width={500}
                       height={500}
