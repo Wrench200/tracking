@@ -331,6 +331,9 @@
   .fCard {
     text-align: center;
   }
+  .logistics h1 {
+    font-size: 25px;
+  }
 }
 .f2 {
   top: 0 !important;
