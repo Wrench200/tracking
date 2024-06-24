@@ -21,6 +21,7 @@ function Page() {
     <>
       <Navbar />
       <Banner
+        
         img={"/images/pexels-bernard-foss-3049419-4620555.jpg"}
         h2Text={"Reliable parcel pick-up and delivery services,"}
         spanText={" anywhere in the world"}

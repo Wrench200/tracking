@@ -37,7 +37,8 @@ function Page() {
       <Banner
         img={"/images/pexels-pixabay-269790.jpg"}
         content={"CONTACT US"}
-        height={"30vh"}
+        height={"40vh"}
+        spanText={"Ready to ship? We'd love to hear from you!"}
       />
       <div className="container lg:w-[60rem] h-full">
         <div className="container mx-auto p-4">
