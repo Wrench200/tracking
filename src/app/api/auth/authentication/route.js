@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import User from "@/models/User";
 import dbConnect from "@/utils/dbConnect";
+import Usertwo from "@/models/Usertwo";
 
 export const POST = async (req, res, next) => {
   //get all the data required from the server
@@ -11,7 +11,7 @@ export const POST = async (req, res, next) => {
   dbConnect();
 
   try {
-    const isUser = await User.findOne({ password: password });
+    const isUser = await Usertwo.findOne({ password: password });
     if (isUser) {
       console.log(JSON.stringify(isUser));
       console.log(isUser.name);

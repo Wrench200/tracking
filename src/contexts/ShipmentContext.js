@@ -11,17 +11,17 @@ export const ShipmentProvider = ({ children }) => {
   const [user, setUser] = useState(() => {
     // Initialize user from local storage
     if (typeof window !== "undefined") {
-       "";
+      return localStorage.getItem("user") || "";
     }
     return "";
   });
 
-  // useEffect(() => {
-  //   // Save user to local storage whenever it changes
-  //   if (typeof window !== "undefined") {
-  //     localStorage.setItem("user", user);
-  //   }
-  // }, [user]);
+  useEffect(() => {
+    // Save user to local storage whenever it changes
+    if (typeof window !== "undefined") {
+      localStorage.setItem("user", user);
+    }
+  }, [user]);
 
   console.log("Current shipment position in context:", shipmentPosition);
 

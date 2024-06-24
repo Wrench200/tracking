@@ -1,4 +1,4 @@
-import Shipment from "@/models/Shipment";
+import Shipmenttwo from "@/models/Shipmenttwo";
 import dbConnect from "@/utils/dbConnect";
 import { NextResponse } from "next/server";
 
@@ -22,7 +22,7 @@ export const POST = async (req) => {
     );
     await dbConnect();
 
-    const shipment = await Shipment.findOneAndUpdate(
+    const shipment = await Shipmenttwo.findOneAndUpdate(
       { trackingNumber },
       { currentPosition: position, currentStep },
       { new: true }

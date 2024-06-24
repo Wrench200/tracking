@@ -1,4 +1,4 @@
-import Shipment from "@/models/Shipment";
+import Shipmenttwo from "@/models/Shipmenttwo";
 import dbConnect from "@/utils/dbConnect";
 import { NextResponse } from "next/server";
 
@@ -8,7 +8,7 @@ export const POST = async (req) => {
     console.log(trackingNumber);
     await dbConnect();
 
-    const shipment = await Shipment.findOne({ trackingNumber });
+    const shipment = await Shipmenttwo.findOne({ trackingNumber });
 
     if (!shipment) {
       return new NextResponse(

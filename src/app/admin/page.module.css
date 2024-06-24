@@ -17,6 +17,12 @@
   margin: 0 auto;
   width: fit-content;
 }
+.aside li {
+  cursor: pointer !important;
+}
+.aside li:hover{
+  background-color: #85888d;
+}
 .details {
   display: flex;
   /* align-items: center; */

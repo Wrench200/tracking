@@ -1,4 +1,4 @@
-import Shipment from "@/models/Shipment";
+import Shipmenttwo from "@/models/Shipmenttwo";
 import dbConnect from "@/utils/dbConnect";
 import { NextResponse } from "next/server";
 
@@ -90,7 +90,7 @@ export const POST = async (req) => {
 
     const trackingNumber = `SWIFTL-${generateNumericId(14)}`;
 
-    const foundShipment = await Shipment.findOne({ trackingNumber });
+    const foundShipment = await Shipmenttwo.findOne({ trackingNumber });
     if (foundShipment) {
       return new NextResponse(
         JSON.stringify({ message: "Shipment for this sender already exists" }),

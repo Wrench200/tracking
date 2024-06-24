@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const ShipmentSchema = new mongoose.Schema(
+const ShipmenttwoSchema = new mongoose.Schema(
   {
     sender: {
       type: String,
@@ -34,7 +34,7 @@ const ShipmentSchema = new mongoose.Schema(
       type: String,
       required: false,
     },
-    shipmentType: {
+    shipmenttwoType: {
       type: String,
       required: false,
     },
@@ -158,6 +158,6 @@ const ShipmentSchema = new mongoose.Schema(
   }
 );
 
-const Shipment =
-  mongoose.models.Shipment || mongoose.model("Shipment", ShipmentSchema);
-export default Shipment;
+const Shipmenttwo =
+  mongoose.models.Shipmenttwo || mongoose.model("Shipmenttwo", ShipmenttwoSchema);
+export default Shipmenttwo;

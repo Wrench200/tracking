@@ -74,11 +74,12 @@ export default function Home() {
     setUser,
   } = useContext(ShipmentContext);
 
+  console.log(user);
   useEffect(() => {
     if (user === "") {
       navigate.push("/login");
     }
-  });
+  }, []);
 
   const handleSubmit = async (e) => {
     const notyf = new Notyf({
@@ -297,6 +298,15 @@ export default function Home() {
             >
               <i class="fas fa-map-marked-alt    "></i> <p>Review Tracking</p>
             </li>{" "}
+            <li
+              onClick={() => {
+                setUser("");
+                navigate.push("/login");
+              }}
+            >
+              <i class="fa fa-sign-out" aria-hidden="true"></i>
+              <p>Log out</p>
+            </li>
           </ul>
         </aside>
         {activeAside === "Add" && (

@@ -1,4 +1,4 @@
-import Shipment from "@/models/Shipment";
+import Shipmenttwo from "@/models/Shipmenttwo";
 import dbConnect from "@/utils/dbConnect";
 import { NextResponse } from "next/server";
 // import connectDB from "@/utils/dbConnect";
@@ -8,7 +8,7 @@ export const POST = async (req, res) => {
 
     const { trackingNumber, updatedData } = await req.json();
 
-    const shipment = await Shipment.findOneAndUpdate(
+    const shipment = await Shipmenttwo.findOneAndUpdate(
       { trackingNumber },
       updatedData,
       { new: true }
