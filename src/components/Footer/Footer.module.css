@@ -5,27 +5,18 @@
   display: grid;
   place-content: center;
 }
-.left img {
+.left img,
+.lefts img {
   width: 100%;
   height: 100%;
+  display: grid;
+  place-content: center;
   object-fit: cover;
 }
 .serve {
   display: flex;
   padding: 1em;
   background-color: #133984;
-}
-.serve img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-.line {
-  /* background-color: green; */
-}
-.serve{
-  /* background-color: blue; */
 }
 .lefts {
   /* width: 100%; */
@@ -35,7 +26,7 @@
   padding: 2em;
   place-content: center;
 }
-.right {
+.rights {
   display: flex;
   flex-direction: column;
   gap: 1em;
