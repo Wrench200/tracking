@@ -1980,13 +1980,14 @@ body {
 .loadingStuff {
   position: fixed;
   top: 0;
-  z-index: 99999999999;
+  z-index: 999999999999 !important;
   left: 0;
   height: 100vh;
   width: 100%;
   display: grid;
   place-content: center;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px) !important;
+  
 }
 .hamburger {
   display: none;
