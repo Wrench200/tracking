@@ -23,7 +23,7 @@
   display: grid;
   /* background-color: red; */
   margin: 0 auto;
-  padding: 2em;
+  /* padding: 2em; */
   place-content: center;
 }
 .rights {

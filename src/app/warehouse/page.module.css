@@ -54,15 +54,14 @@
   gap: 2em;
 }
 .left {
-  background: url("/images/pexels-dibert-1117211.jpg");
+  background: url("/images/pexels-janamparikh-15947631.jpg");
   background-attachment: fixed;
-  background-position: right;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 400px;
   /* background-color: red; */
   box-sizing: border-box;
-
   width: 100%;
 }
 .choice img {
