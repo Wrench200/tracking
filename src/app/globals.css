@@ -1986,9 +1986,11 @@ body {
   width: 100%;
   display: grid;
   place-content: center;
+  background: rgba(255, 255, 255, 0.5); /* Add a semi-transparent background */
+  -webkit-backdrop-filter: blur(15px) !important; /* For Safari */
   backdrop-filter: blur(15px) !important;
-  
 }
+
 .hamburger {
   display: none;
 }
@@ -2041,7 +2043,7 @@ body {
     /* background-color: red; */
     min-width: 90%;
   }
-  .slider .content h2{
+  .slider .content h2 {
     font-weight: 900 !important;
   }
   .log {
@@ -2068,8 +2070,8 @@ body {
     width: 25rem;
   }
 }
-.slider .content button{
- background-color: #eb2b2b;
- padding: 1em 3em;
- cursor: pointer;
+.slider .content button {
+  background-color: #eb2b2b;
+  padding: 1em 3em;
+  cursor: pointer;
 }
