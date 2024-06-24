@@ -235,7 +235,7 @@ body {
 }
 
 .buttonTrack:hover svg {
-  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  transform: translateX(0) rotate(45deg) scale(1.1);
 }
 
 .buttonTrack:hover span {
