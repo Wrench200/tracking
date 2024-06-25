@@ -9,16 +9,7 @@ function Footer() {
   const year = new Date().getFullYear();
   const navigate = useRouter();
 
-  const phoneNumber = "+15125088895"; // Replace with your WhatsApp number
-  // const preFilledMessage =
-  //   "Hello! I need assistance with tracking my shipment.Thank you!";
-
-  // // URL encode the message
-  // const encodedMessage = encodeURIComponent(preFilledMessage);
-
-  // // Create the WhatsApp link
-  // const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-
+  
   return (
     <>
       <div className={style.serve}>
@@ -81,7 +72,7 @@ function Footer() {
                   </p>
 
                   <ul class="wrapper">
-                    <Link href={""} class="icon instagram">
+                    <li class="icon instagram">
                       <span class="tooltip">Whatsapp</span>
                       <i
                         style={{
@@ -92,7 +83,7 @@ function Footer() {
                         class="fa-brands fa-whatsapp"
                         aria-hidden="true"
                       ></i>
-                    </Link>
+                    </li>
                   </ul>
                 </div>
 

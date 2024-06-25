@@ -42,7 +42,7 @@ function Navbar({ colors }) {
     >
       <nav className={`${style.nav} ${isScrolled ? style.scrolled : ""} `}>
         <div className={style.left} onClick={() => navigate.push("/")}>
-          <Image
+          <img
             src={"/images/Screenshot__217_-removebg-preview.png"}
             width={500}
             alt="image"
