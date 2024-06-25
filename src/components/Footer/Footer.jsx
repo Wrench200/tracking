@@ -8,8 +8,16 @@ import { useRouter } from "next/navigation";
 function Footer() {
   const year = new Date().getFullYear();
   const navigate = useRouter();
+  const phoneNumber = "+15125088895"; // Replace with your phone number
+  const preFilledMessage =
+    "Hello! I need assistance with tracking my shipment. Thank you!";
 
-  
+  // URL encode the message
+  const encodedMessage = encodeURIComponent(preFilledMessage);
+
+  // Create the SMS link
+  const smsLink = `sms:${phoneNumber}?&body=${encodedMessage}`;
+
   return (
     <>
       <div className={style.serve}>
@@ -71,20 +79,7 @@ function Footer() {
                     shipments.
                   </p>
 
-                  <ul class="wrapper">
-                    <li class="icon instagram">
-                      <span class="tooltip">Whatsapp</span>
-                      <i
-                        style={{
-                          fontSize: "18px",
-                          fontWeight: "600",
-                          color: "#000",
-                        }}
-                        class="fa-brands fa-whatsapp"
-                        aria-hidden="true"
-                      ></i>
-                    </li>
-                  </ul>
+                 
                 </div>
 
                 <ul class="footer-list">

@@ -168,16 +168,15 @@ function Content() {
       clearInterval(interval); // Clear interval on component unmount
     };
   }, [handleNext]);
-
-  const phoneNumber = "+15125088895"; // Replace with your WhatsApp number
+  const phoneNumber = "+15125088895"; // Replace with your phone number
   const preFilledMessage =
-    "Hello! I need assistance with tracking my shipment.Thank you!";
+    "Hello! I need assistance with tracking my shipment. Thank you!";
 
   // URL encode the message
   const encodedMessage = encodeURIComponent(preFilledMessage);
 
-  // Create the WhatsApp link
-  const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+  // Create the SMS link
+  const smsLink = `sms:${phoneNumber}?&body=${encodedMessage}`;
 
   return (
     <>
