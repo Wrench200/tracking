@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <ShipmentProvider>{children}</ShipmentProvider>
         <script
-          src="//code.tidio.co/ynthoymd8s7umuyhxzuxavofc0qfu0su.js"
+          src="//code.tidio.co/7x0q8bou4nyocowe6e2gzlqzv9kbg0mo.js"
           async
         ></script>
       </body>

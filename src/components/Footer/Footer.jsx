@@ -9,7 +9,7 @@ function Footer() {
   const year = new Date().getFullYear();
   const navigate = useRouter();
 
-  const phoneNumber = "+237682454355"; // Replace with your WhatsApp number
+  const phoneNumber = "+15125088895"; // Replace with your WhatsApp number
   const preFilledMessage =
     "Hello! I need assistance with tracking my shipment.Thank you!";
 

@@ -199,7 +199,7 @@ function Page() {
               <button onClick={() => navigate.push("/contact")}>
                 CONTACT US TODAY
               </button>
-              <Link href={""}>123-456-789</Link>
+              <Link href={whatsappLink}>+1(512) 508-8895</Link>
             </div>
           </div>
         </section>

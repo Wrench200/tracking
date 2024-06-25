@@ -391,7 +391,8 @@ body {
   padding: 0.5em 2em;
   border: none;
   background: #eb2b2b;
-  border-radius: 6px;
+  border-radius: 2px;
+  width: fit-content;
   color: white;
   margin: 1em 0;
   cursor: pointer;

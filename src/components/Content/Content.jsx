@@ -169,7 +169,7 @@ function Content() {
     };
   }, [handleNext]);
 
-  const phoneNumber = "+237672992713"; // Replace with your WhatsApp number
+  const phoneNumber = "+15125088895"; // Replace with your WhatsApp number
   const preFilledMessage =
     "Hello! I need assistance with tracking my shipment.Thank you!";
 
@@ -179,7 +179,6 @@ function Content() {
   // Create the WhatsApp link
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
-  console.log(whatsappLink); // Use this link in your website
 
   return (
     <>

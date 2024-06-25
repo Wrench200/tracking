@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState, useRef } from "react";
 // import './style.css'; // Assuming you have a style.css file in the same directory
@@ -38,9 +39,7 @@ function Banner({ spanText, h2Text, pText, img, button, location, height }) {
               <h2>{h2Text}</h2>
               <span>{spanText}</span>
               <p>{pText}</p>
-              <button onClick={() => navigate.push(`${location}`)}>
-                {button}
-              </button>
+              <Link className="discover" href={location}>{button}</Link>
             </div>
           </div>
         </div>
