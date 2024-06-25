@@ -17,12 +17,24 @@ function Page() {
       duration: 500, // Animation duration in milliseconds
     });
   }, []);
+
+  const phoneNumber = "+15125088895"; // Replace with your WhatsApp number
+  const preFilledMessage =
+    "Hello! I need assistance with tracking my shipment.Thank you!";
+
+  // URL encode the message
+  const encodedMessage = encodeURIComponent(preFilledMessage);
+
+  // Create the WhatsApp link
+  const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
   return (
     <>
       <Navbar />
       <Banner
         img={"/images/pexels-bernard-foss-3049419-4620555.jpg"}
         h2Text={"Reliable parcel pick-up and delivery services,"}
+        location={""}
         spanText={" anywhere in the world"}
       />
       <section className={`central ${style.section}`}>
@@ -101,7 +113,7 @@ function Page() {
             <button onClick={() => navigate.push("/contact")}>
               CONTACT US TODAY
             </button>
-            <Link href={""}>123-456-789</Link>
+            <Link href={whatsappLink}>{"+1(512) 508-8895"}</Link>
           </div>
         </div>
         <div className={style.abouts}>
@@ -199,7 +211,7 @@ function Page() {
               <button onClick={() => navigate.push("/contact")}>
                 CONTACT US TODAY
               </button>
-              <Link href={""}>123-456-789</Link>
+              <Link href={whatsappLink}>{"+1(512) 508-8895"}</Link>
             </div>
           </div>
         </section>

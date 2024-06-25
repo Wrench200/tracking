@@ -38,6 +38,7 @@ function Page() {
         img={"/images/pexels-pixabay-269790.jpg"}
         content={"CONTACT US"}
         height={"40vh"}
+        location={""}
         spanText={"Ready to ship? We'd love to hear from you!"}
       />
       <div className="container lg:w-[60rem] h-full">

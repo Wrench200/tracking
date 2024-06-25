@@ -35,6 +35,8 @@ export default function Home() {
         }
         spanText={"national and worldwide"}
         img={"/images/pexels-albinberlin-906982.jpg"}
+        location={""}
+
       />
       <Content />
       <Footer />
