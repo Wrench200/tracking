@@ -9,13 +9,14 @@ import style from "./page.module.css";
 import Link from "next/link";
 
 function Page() {
+  const navigate = useRouter();
   const [stage, setStage] = useState(0);
   useEffect(() => {
     Aos.init({
       duration: 500, // Animation duration in milliseconds
     });
   }, []);
-  
+
   const phoneNumber = "+15125088895"; // Replace with your WhatsApp number
   const preFilledMessage =
     "Hello! I need assistance with tracking my shipment.Thank you!";
@@ -231,7 +232,7 @@ function Page() {
                 <button onClick={() => navigate.push("/contact")}>
                   CONTACT US
                 </button>
-                <Link href={whatsappLink}>+1(512) 508-8895</Link>
+                <Link href={whatsappLink}>{"+1(512) 508-8895"}</Link>
               </div>
             </div>
           </div>

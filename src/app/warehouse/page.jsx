@@ -9,6 +9,8 @@ import style from "./page.module.css";
 import Link from "next/link";
 
 function Page() {
+  const navigate = useRouter();
+
   const [stage, setStage] = useState(0);
   useEffect(() => {
     Aos.init({
@@ -165,7 +167,7 @@ function Page() {
                 <button onClick={() => navigate.push("/contact")}>
                   CONTACT US
                 </button>
-                <Link href={whatsappLink}>+1(512) 508-8895</Link>
+                <Link href={whatsappLink}>{"+1(512) 508-8895"}</Link>
               </div>
             </div>
           </div>
@@ -238,7 +240,7 @@ function Page() {
                 <button onClick={() => navigate.push("/contact")}>
                   CONTACT US
                 </button>
-                <Link href={""}>123-456-789</Link>
+                <Link href={whatsappLink}>{"+1(512) 508-8895"}</Link>
               </div>
             </div>
           </div>
