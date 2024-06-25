@@ -21,8 +21,8 @@ const MapComponent = ({ senderCoords, receiverCoords, trackingNumber }) => {
         mapRef.current = new mapboxgl.Map({
           container: "map",
           style: "mapbox://styles/mapbox/streets-v11",
-          center: senderCoords,
-          zoom: 10,
+          center: receiverCoords,
+          zoom: 8,
         });
 
         new mapboxgl.Marker({ color: "blue" })
@@ -30,10 +30,15 @@ const MapComponent = ({ senderCoords, receiverCoords, trackingNumber }) => {
           .setPopup(new mapboxgl.Popup().setHTML("<h4>Sender Location</h4>"))
           .addTo(mapRef.current);
 
-        new mapboxgl.Marker({ color: "red" })
+        const receiverMarker = new mapboxgl.Marker({ color: "red" })
           .setLngLat(receiverCoords)
           .setPopup(new mapboxgl.Popup().setHTML("<h4>Receiver Location</h4>"))
           .addTo(mapRef.current);
+
+        // Ensure the popup opens on marker click
+        receiverMarker.getElement().addEventListener("click", () => {
+          receiverMarker.togglePopup();
+        });
 
         // Fetch route from Mapbox Directions API
         fetch(
