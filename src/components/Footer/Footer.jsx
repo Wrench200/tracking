@@ -80,7 +80,10 @@ function Footer() {
                   </p>
 
                   <ul class="wrapper">
-                    <li class="icon instagram">
+                    <li
+                      class="icon instagram"
+                      onClick={() => navigate.push(smsLink)}
+                    >
                       <span class="tooltip">Message</span>
                       <i class="fa fa-envelope" aria-hidden="true"></i>
                     </li>
