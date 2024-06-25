@@ -168,6 +168,19 @@ function Content() {
       clearInterval(interval); // Clear interval on component unmount
     };
   }, [handleNext]);
+
+  const phoneNumber = "+237672992713"; // Replace with your WhatsApp number
+  const preFilledMessage =
+    "Hello! I need assistance with tracking my shipment.Thank you!";
+
+  // URL encode the message
+  const encodedMessage = encodeURIComponent(preFilledMessage);
+
+  // Create the WhatsApp link
+  const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+  console.log(whatsappLink); // Use this link in your website
+
   return (
     <>
       <section className="central">
@@ -547,12 +560,13 @@ function Content() {
               </div>
               <p>
                 Bruce and Jet have landed safely in our arms in San Francisco. I
-                just wanted to thank YOU and the entire FastLane Global for helping us with this process from EU to America. I
-                especially appreciate how easy you made it for us when we had to
-                reschedule the flight with such short notice because of my
-                husband’s emergency knee surgery. Thank you for making it so
-                seamless and for taking such great care of our babies. I cannot
-                sing your praises loudly enough.
+                just wanted to thank YOU and the entire FastLane Global for
+                helping us with this process from EU to America. I especially
+                appreciate how easy you made it for us when we had to reschedule
+                the flight with such short notice because of my husband’s
+                emergency knee surgery. Thank you for making it so seamless and
+                for taking such great care of our babies. I cannot sing your
+                praises loudly enough.
               </p>
               <h1
                 style={{
@@ -602,7 +616,7 @@ function Content() {
                 />
               </div>
               <p>
-              FastLane Global Service brought my Car from USA to me in
+                FastLane Global Service brought my Car from USA to me in
                 Australia after I was transferred. It saved me a lot of money
                 buying a new car.
               </p>
@@ -628,9 +642,9 @@ function Content() {
                 />
               </div>
               <p>
-                I have been using FastLane Global for my international
-                shipping needs, and I could not be more satisfied. Their service
-                is top-notch, with prompt deliveries and excellent customer
+                I have been using FastLane Global for my international shipping
+                needs, and I could not be more satisfied. Their service is
+                top-notch, with prompt deliveries and excellent customer
                 support. The tracking system is reliable, keeping me informed at
                 every step. Highly recommend for anyone needing a trustworthy
                 logistics partner
