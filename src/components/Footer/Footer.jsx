@@ -79,7 +79,12 @@ function Footer() {
                     shipments.
                   </p>
 
-                 
+                  <ul class="wrapper">
+                    <li class="icon instagram">
+                      <span class="tooltip">Message</span>
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </li>
+                  </ul>
                 </div>
 
                 <ul class="footer-list">
