@@ -46,8 +46,8 @@ function Page() {
         </p>
         <p>
           Trust us to strengthen your supply chain, facilitating seamless
-          shipments across Canada, the U.S., and worldwide. Partner with FastLane
-          for unparalleled logistics expertise and service excellence.{" "}
+          shipments across Canada, the U.S., and worldwide. Partner with
+          FastLane for unparalleled logistics expertise and service excellence.{" "}
         </p>
       </div>
       <section>
@@ -73,7 +73,7 @@ function Page() {
         </div>
         <div className={style.freightInfo}>
           <div className={style.freight}>
-            <div className={style.fCard}>
+            <div className={style.fCard} data-aos={"fade-up"}>
               <div className={style.topCard}>
                 <div className={style.icon}>
                   <img src="/images/plane.svg" alt="" />
@@ -109,7 +109,7 @@ function Page() {
                 </ul>
               </div>
             </div>
-            <div className={style.fCard}>
+            <div className={style.fCard} data-aos={"fade-up"}>
               <div className={style.topCard}>
                 <div className={style.icon}>
                   <img src="/images/ship.svg" alt="" />
@@ -149,7 +149,7 @@ function Page() {
                 </ul>
               </div>
             </div>
-            <div className={style.fCard}>
+            <div className={style.fCard} data-aos={"fade-up"}>
               <div className={style.topCard}>
                 <div className={style.icon}>
                   <img src="/images/truck.svg" alt="" />
@@ -192,7 +192,7 @@ function Page() {
             </div>
           </div>
           <div className="central">
-            <div className={style.botInfo}>
+            <div className={style.botInfo} data-aos={"fade-in"}>
               <h1>Logistics brokers and advisors at your service!</h1>
               <p>
                 Would you like more information about our logistics and shipping
@@ -206,15 +206,15 @@ function Page() {
               </p>
               <div>
                 <span>
-                  Not what you’re looking for? At FastLane, we offer a full range
-                  of services, including same-day delivery and international
-                  courier services.
+                  Not what you’re looking for? At FastLane, we offer a full
+                  range of services, including same-day delivery and
+                  international courier services.
                 </span>
-                  <p>
-                    Whatever your shipping requirements may be, FastLane has the
-                    expertise and resources to meet them with precision and
-                    efficiency.
-                  </p>
+                <p>
+                  Whatever your shipping requirements may be, FastLane has the
+                  expertise and resources to meet them with precision and
+                  efficiency.
+                </p>
               </div>
               <div className={style.buttons}>
                 <button onClick={() => navigate.push("/contact")}>

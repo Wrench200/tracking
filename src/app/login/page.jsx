@@ -1,37 +1,25 @@
 "use client";
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import style from "./page.module.css";
 import { useRouter } from "next/navigation";
 import ShipmentContext from "@/contexts/ShipmentContext";
 
 function Page() {
   const [name, setName] = useState("");
-  const [password, setpassword] = useState("");
+  const [password, setPassword] = useState("");
   const [showPass, setShowPass] = useState(false);
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
 
-  const {
-    shipments,
-    setShipments,
-    shipmentStatus,
-    setShipmentStatus,
-    shipmentPosition,
-    setShipmentPosition,
-    currentStep,
-    setCurrentStep,
-    user,
-    setUser,
-  } = useContext(ShipmentContext);
-  console.log(user);
-  console.log(error);
+  const { user, setUser, rem, setRem } = useContext(ShipmentContext);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     let valid = true;
     console.log(name, password);
 
-    if (password == "") {
+    if (password === "") {
       setError("Password is required");
       valid = false;
     }
@@ -40,7 +28,7 @@ function Page() {
     if (valid) {
       try {
         setIsLoading(true);
-        const res = await fetch("api/auth/authentication", {
+        const res = await fetch("/api/auth/authentication", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -54,14 +42,17 @@ function Page() {
         if (res.status === 200) {
           setIsLoading(false);
           setUser(name);
+          if (rem) {
+            localStorage.setItem("user", name);
+          }
           router.push("/admin");
         } else if (res.status === 400) {
           setIsLoading(false);
-          setError("invalid credentials");
+          setError("Invalid credentials");
         }
       } catch (error) {
         console.log(error);
-        setError(Error);
+        setError("An error occurred");
       }
     }
 
@@ -85,31 +76,39 @@ function Page() {
       )}
       <form action="" onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="">Name</label>
+          <label htmlFor="name">Name</label>
           <input
             type="text"
-            id=""
+            id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
         </div>
         <div className={style.pass}>
-          <label htmlFor="">Password</label>
+          <label htmlFor="password">Password</label>
           <input
             type={showPass ? "text" : "password"}
-            id=""
+            id="password"
             value={password}
-            onChange={(e) => setpassword(e.target.value)}
+            onChange={(e) => setPassword(e.target.value)}
           />
-
           <i
-            onClick={() => (showPass ? setShowPass(false) : setShowPass(true))}
-            class={`fa ${showPass ? "fa-eye-slash" : "fa-eye"}`}
+            onClick={() => setShowPass(!showPass)}
+            className={`fa ${showPass ? "fa-eye-slash" : "fa-eye"}`}
             aria-hidden="true"
           ></i>
         </div>
-        <button>login</button>
-      </form>{" "}
+        <div style={{ display: "flex", alignItems: "center", gap: ".5em" }}>
+          <input
+            type="checkbox"
+            id="rememberMe"
+            checked={rem}
+            onChange={() => setRem(!rem)}
+          />
+          <label htmlFor="rememberMe">Remember me</label>
+        </div>
+        <button type="submit">Login</button>
+      </form>
       {error && <p style={{ color: "red", fontWeight: "600" }}>{error}</p>}
     </section>
   );

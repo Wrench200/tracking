@@ -16,10 +16,11 @@
 .serve {
   display: flex;
   padding: 1em;
+  
   background-color: #133984;
 }
 .lefts {
-  /* width: 100%; */
+  width: 60%;
   display: grid;
   /* background-color: red; */
   margin: 0 auto;
@@ -36,6 +37,7 @@
   display: flex;
   align-items: start;
   color: white;
+  gap: 1em;
 }
 .line h2 {
   font-size: 15px;

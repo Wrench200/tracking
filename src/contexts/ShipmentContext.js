@@ -5,23 +5,36 @@ const ShipmentContext = createContext();
 
 export const ShipmentProvider = ({ children }) => {
   const [shipments, setShipments] = useState(null);
+  const [rem, setRem] = useState(() => {
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("rem") === "true";
+    }
+    return false;
+  });
   const [shipmentStatus, setShipmentStatus] = useState("pending");
   const [shipmentPosition, setShipmentPosition] = useState([0, 0]);
   const [currentStep, setCurrentStep] = useState(0);
   const [user, setUser] = useState(() => {
     // Initialize user from local storage
     if (typeof window !== "undefined") {
-      return localStorage.getItem("user") || "";
+      let storedUser = localStorage.getItem("user");
+      return rem ? storedUser || "" : "";
     }
     return "";
   });
 
   useEffect(() => {
-    // Save user to local storage whenever it changes
+    // Save user and rem to local storage whenever they change
     if (typeof window !== "undefined") {
-      localStorage.setItem("user", user);
+      if (rem) {
+        localStorage.setItem("user", user);
+        localStorage.setItem("rem", rem);
+      } else {
+        localStorage.removeItem("user");
+        localStorage.removeItem("rem");
+      }
     }
-  }, [user]);
+  }, [user, rem]);
 
   console.log("Current shipment position in context:", shipmentPosition);
 
@@ -38,6 +51,8 @@ export const ShipmentProvider = ({ children }) => {
         setCurrentStep,
         user,
         setUser,
+        rem,
+        setRem,
       }}
     >
       {children}
