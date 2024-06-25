@@ -7,6 +7,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import style from "./page.module.css";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 function Page() {
   const navigate = useRouter();
