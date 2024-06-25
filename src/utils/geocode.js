@@ -8,9 +8,9 @@ export const geocodeAddress = async (address) => {
   try {
     console.log(`Geocoding address: ${address}`);
     const response = await fetch(
-      `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(
+      `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
         address
-      )}`,
+      )}.json?access_token=pk.eyJ1IjoiaG9taWVxdWFuIiwiYSI6ImNsd3h6bGx6NTEwZW4yaXNhbmwwYW9iY2YifQ.YH2bXNg9LMDO8DGnqC5WFA`,
       { signal }
     );
     clearTimeout(timeoutId);
@@ -24,11 +24,10 @@ export const geocodeAddress = async (address) => {
     const data = await response.json();
     console.log("Geocoding response data:", data); // Log the raw response data
 
-    if (data && data.length > 0) {
-      const lat = parseFloat(data[0].lat);
-      const lon = parseFloat(data[0].lon);
+    if (data.features && data.features.length > 0) {
+      const [lon, lat] = data.features[0].center;
       console.log(`Geocoded coordinates: (${lat}, ${lon})`);
-      return [lat, lon];
+      return [lon, lat]; // Return in order [longitude, latitude]
     } else {
       console.warn(`No geocoding result found for address: ${address}`);
       return null;

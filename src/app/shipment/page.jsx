@@ -58,11 +58,13 @@ function PageContent() {
   const [receiverCoords, setReceiverCoords] = useState(null);
   const [estimatedDeliveryTime, setEstimatedDeliveryTime] = useState("");
 
+  console.log(senderCoords);
+  console.log(receiverCoords);
+
   const printRef = useRef();
 
   useEffect(() => {
     const fetchLatestShipment = async () => {
-      const L = await import("leaflet");
       if (trackingNumber) {
         try {
           const res = await fetch("/api/getShipment", {
@@ -85,14 +87,6 @@ function PageContent() {
             if (senderCoords && receiverCoords) {
               setSenderCoords(senderCoords);
               setReceiverCoords(receiverCoords);
-              const distance =
-                L.latLng(senderCoords).distanceTo(L.latLng(receiverCoords)) /
-                1000;
-              const estimatedTime = calculateEstimatedDeliveryTime(
-                distance,
-                data.shipmentData.shippingMethod
-              );
-              setEstimatedDeliveryTime(estimatedTime);
             } else {
               setError("Unable to geocode one or both addresses.");
             }
@@ -110,7 +104,6 @@ function PageContent() {
         setLoading(false);
       }
     };
-
     fetchLatestShipment();
   }, [trackingNumber, setShipments, setShipmentStatus, setShipmentPosition]);
 
@@ -373,6 +366,14 @@ function PageContent() {
             )}
           </div>
         </div>
+        <h1>Package route</h1>
+        {senderCoords && receiverCoords && (
+          <MapComponent
+            senderCoords={senderCoords}
+            receiverCoords={receiverCoords}
+            trackingNumber={trackingNumber}
+          />
+        )}
         <h1 className={style.h1}>Shipment History</h1>
         <div className={style.table}>
           <div className={style.liner}>
@@ -385,37 +386,12 @@ function PageContent() {
           </div>
           <div className={style.liner}>
             <p>Status</p>
-            <p
-              style={{
-                textTransform: "uppercase",
-              }}
-            >
-              {shipments.status}
-            </p>
-          </div>
-          <div className={style.liner}>
-            <p>Updated By</p>
-            <p
-              style={{
-                fontWeight: "700",
-              }}
-            >
-              admin
-            </p>
+            <p>{shipments.status}</p>
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }
 
-function Page() {
-  return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <PageContent />
-    </Suspense>
-  );
-}
-
-export default Page;
+export default PageContent;
