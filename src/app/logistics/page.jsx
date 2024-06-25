@@ -7,6 +7,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import style from "./page.module.css";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 function Page() {
   const navigate = useRouter();
@@ -18,14 +19,14 @@ function Page() {
   }, []);
 
   const phoneNumber = "+15125088895"; // Replace with your WhatsApp number
-  const preFilledMessage =
-    "Hello! I need assistance with tracking my shipment.Thank you!";
+  // const preFilledMessage =
+  //   "Hello! I need assistance with tracking my shipment.Thank you!";
 
-  // URL encode the message
-  const encodedMessage = encodeURIComponent(preFilledMessage);
+  // // URL encode the message
+  // const encodedMessage = encodeURIComponent(preFilledMessage);
 
-  // Create the WhatsApp link
-  const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+  // // Create the WhatsApp link
+  // const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
   return (
     <>
@@ -232,7 +233,7 @@ function Page() {
                 <button onClick={() => navigate.push("/contact")}>
                   CONTACT US
                 </button>
-                <Link href={whatsappLink}>{"+1(512) 508-8895"}</Link>
+                {/*<Link href={whatsappLink}>{"+1(512) 508-8895"}</Link>*/}
               </div>
             </div>
           </div>
