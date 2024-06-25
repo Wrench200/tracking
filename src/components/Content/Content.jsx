@@ -179,7 +179,6 @@ function Content() {
   // Create the WhatsApp link
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
-
   return (
     <>
       <section className="central">
@@ -495,7 +494,7 @@ function Content() {
             <div className={`revs ${revCount === 1 && "boxShow"}`}>
               <h1>TESTIMONIALS</h1>
               <div className={`boxImage`}>
-                <img
+                <Image
                   alt={"image"}
                   src={"/images/Bruce-and-Jet.webp"}
                   width={400}
@@ -523,7 +522,7 @@ function Content() {
             <div className={`revs ${revCount === 2 && "boxShow"}`}>
               <h1>TESTIMONIALS</h1>
               <div className={`boxImage`}>
-                <img
+                <Image
                   alt={"image"}
                   src={"/images/Faces-400x400px-1_1_07-thegem-person.webp"}
                   width={400}
@@ -550,7 +549,7 @@ function Content() {
             <div className={`revs ${revCount === 3 && "boxShow"}`}>
               <h1>TESTIMONIALS</h1>
               <div className={`boxImage`}>
-                <img
+                <Image
                   alt={"image"}
                   src={"/images/Faces-400x400px-1_1_18-thegem-person.webp"}
                   width={400}
@@ -581,7 +580,7 @@ function Content() {
             <div className={`revs ${revCount === 4 && "boxShow"}`}>
               <h1>TESTIMONIALS</h1>
               <div className={`boxImage`}>
-                <img
+                <Image
                   alt={"image"}
                   src={"/images/Faces-400x400px-1_1_28-thegem-person.webp"}
                   width={400}
@@ -607,7 +606,7 @@ function Content() {
             <div className={`revs ${revCount === 5 && "boxShow"}`}>
               <h1>TESTIMONIALS</h1>
               <div className={`boxImage`}>
-                <img
+                <Image
                   alt={"image"}
                   src={"/images/gettyimages-1219356771-640x640.jpg"}
                   width={400}
@@ -633,7 +632,7 @@ function Content() {
             <div className={`revs ${revCount === 6 && "boxShow"}`}>
               <h1>TESTIMONIALS</h1>
               <div className={`boxImage`}>
-                <img
+                <Image
                   alt={"image"}
                   src={"/blank-profile-picture-973460_640.png"}
                   width={400}
@@ -662,7 +661,7 @@ function Content() {
             <div className={`revs ${revCount === 7 && "boxShow"}`}>
               <h1>TESTIMONIALS</h1>
               <div className={`boxImage`}>
-                <img
+                <Image
                   alt={"image"}
                   src={"/blank-profile-picture-973460_640.png"}
                   width={400}
@@ -697,7 +696,7 @@ function Content() {
         </div>
 
         <div className="LapImage2">
-          <img
+          <Image
             src={"/images/pexels-tima-miroshnichenko-6169137.jpg"}
             width={500}
             height={500}

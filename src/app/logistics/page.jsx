@@ -15,7 +15,7 @@ function Page() {
       duration: 500, // Animation duration in milliseconds
     });
   }, []);
-
+  
   const phoneNumber = "+15125088895"; // Replace with your WhatsApp number
   const preFilledMessage =
     "Hello! I need assistance with tracking my shipment.Thank you!";
