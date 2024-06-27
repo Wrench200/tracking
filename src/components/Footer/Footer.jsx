@@ -6,6 +6,13 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 function Footer() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const mailtoLink = `mailto:fastlaneglobalagency@gmail.com?subject=Contact%20Form`;
+    window.location.href = mailtoLink;
+  };
+
   const year = new Date().getFullYear();
   const navigate = useRouter();
   const phoneNumber = "+15125088895"; // Replace with your phone number
@@ -88,6 +95,12 @@ function Footer() {
                       <i class="fa fa-envelope" aria-hidden="true"></i>
                     </li>
                   </ul>
+                  <div>
+                    <form onSubmit={handleSubmit} className={style.email}>
+                      <p>Email:</p>
+                      <button>fastlaneglobalagency@gmail.com</button>
+                    </form>
+                  </div>
                 </div>
 
                 <ul class="footer-list">
