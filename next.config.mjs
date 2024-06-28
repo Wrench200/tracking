@@ -1,4 +1,3 @@
-// next.config.mjs
 import webpack from "webpack";
 
 /** @type {import('next').NextConfig} */
@@ -12,6 +11,10 @@ const nextConfig = {
       })
     );
     return config;
+  },
+  env: {
+    EMAIL_USER: process.env.EMAIL_USER,
+    EMAIL_PASS: process.env.EMAIL_PASS,
   },
 };
 

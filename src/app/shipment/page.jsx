@@ -74,7 +74,23 @@ function PageContent() {
           if (res.status === 200) {
             const data = await res.json();
             setShipments(data.shipmentData);
-            setShipmentStatus(data.shipmentData.status);
+
+            // Check if the shipment status has changed
+            if (data.shipmentData.status !== shipmentStatus) {
+              // Send email notification
+              await fetch("/api/sendEmail", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                  receiverEmail: data.shipmentData.receiverEmail,
+                  trackingNumber,
+                  status: data.shipmentData.status,
+                }),
+              });
+
+              setShipmentStatus(data.shipmentData.status);
+            }
+
             setShipmentPosition(data.shipmentData.currentPosition);
 
             const senderAddress = data.shipmentData.senderAddress;
@@ -112,7 +128,13 @@ function PageContent() {
     };
 
     fetchLatestShipment();
-  }, [trackingNumber, setShipments, setShipmentStatus, setShipmentPosition]);
+  }, [
+    trackingNumber,
+    setShipments,
+    setShipmentStatus,
+    setShipmentPosition,
+    shipmentStatus,
+  ]);
 
   const handlePrint = () => {
     const printContent = printRef.current.innerHTML;
