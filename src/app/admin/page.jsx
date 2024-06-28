@@ -222,7 +222,7 @@ export default function Home() {
         const data = await res.json();
         setShipment(data.shipmentData);
         notyf.success("Shipment updated successfully");
-        // navigate.push(`/shipment?num=${trackingNumber}`);
+        navigate.push(`/shipment?num=${trackingNumber}`);
       } else {
         const errorData = await res.json();
         setError(errorData.message || "Error updating shipment");
