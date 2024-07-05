@@ -15,7 +15,7 @@ function Footer() {
 
   const year = new Date().getFullYear();
   const navigate = useRouter();
-  const phoneNumber = "+15125088895"; // Replace with your phone number
+  const phoneNumber = ""; // Replace with your phone number
   const preFilledMessage =
     "Hello! I need assistance with tracking my shipment. Thank you!";
 

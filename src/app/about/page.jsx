@@ -17,7 +17,7 @@ function Page() {
       duration: 500, // Animation duration in milliseconds
     });
   }, []);
-  const phoneNumber = "+15125088895"; // Replace with your phone number
+  const phoneNumber = ""; // Replace with your phone number
   const preFilledMessage =
     "Hello! I need assistance with tracking my shipment. Thank you!";
 
@@ -112,7 +112,7 @@ function Page() {
             <button onClick={() => navigate.push("/contact")}>
               CONTACT US TODAY
             </button>
-            <Link href={smsLink}>{"+1(512) 508-8895"}</Link>
+            <Link href={smsLink}>{""}</Link>
           </div>
         </div>
         <div className={style.abouts}>
@@ -210,7 +210,7 @@ function Page() {
               <button onClick={() => navigate.push("/contact")}>
                 CONTACT US TODAY
               </button>
-              <Link href={smsLink}>{"+1(512) 508-8895"}</Link>
+              <Link href={smsLink}>{""}</Link>
             </div>
           </div>
         </section>

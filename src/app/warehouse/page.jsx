@@ -18,7 +18,7 @@ function Page() {
       duration: 500, // Animation duration in milliseconds
     });
   }, []);
-  const phoneNumber = "+15125088895"; // Replace with your phone number
+  const phoneNumber = ""; // Replace with your phone number
   const preFilledMessage =
     "Hello! I need assistance with tracking my shipment. Thank you!";
 
@@ -167,7 +167,7 @@ function Page() {
                 <button onClick={() => navigate.push("/contact")}>
                   CONTACT US
                 </button>
-                <Link href={smsLink}>{"+1(512) 508-8895"}</Link>
+                <Link href={smsLink}>{""}</Link>
               </div>
             </div>
           </div>
@@ -231,17 +231,16 @@ function Page() {
                   team for a quick estimate or to find out more about our
                   services. Count on FastLane Global Worldwide Courier for
                   express international delivery of parcels, envelopes or other
-                  specialized freight. Contact{" "}
-                  <Link href={smsLink}>{"+1(512) 508-8895"}</Link> to open an
-                  account today. Let us leverage our international shipping
-                  expertise to serve for you.
+                  specialized freight. Contact <Link href={smsLink}>{""}</Link>{" "}
+                  to open an account today. Let us leverage our international
+                  shipping expertise to serve for you.
                 </p>
               </div>
               <div className={style.buttons}>
                 <button onClick={() => navigate.push("/contact")}>
                   CONTACT US
                 </button>
-                <Link href={smsLink}>{"+1(512) 508-8895"}</Link>
+                <Link href={smsLink}>{""}</Link>
               </div>
             </div>
           </div>

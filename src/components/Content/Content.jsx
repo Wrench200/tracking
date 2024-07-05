@@ -168,7 +168,7 @@ function Content() {
       clearInterval(interval); // Clear interval on component unmount
     };
   }, [handleNext]);
-  const phoneNumber = "+15125088895"; // Replace with your phone number
+  const phoneNumber = ""; // Replace with your phone number
   const preFilledMessage =
     "Hello! I need assistance with tracking my shipment. Thank you!";
 
