@@ -87,13 +87,13 @@ function Footer() {
                   </p>
 
                   <ul class="wrapper">
-                    <li
+                    {/* <li
                       class="icon instagram"
                       onClick={() => navigate.push(smsLink)}
                     >
                       <span class="tooltip">Message</span>
                       <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </li>
+                    </li> */}
                   </ul>
                   <div>
                     <form onSubmit={handleSubmit} className={style.email}>
