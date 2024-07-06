@@ -266,7 +266,9 @@ function Content() {
             <div className={style.numbers}>
               <div className={style.line}>
                 <div className={style.text}>
-                  <h1>
+                  <h1 style={{
+                    fontSize:"30px"
+                  }}>
                     {isVisible && <Counter start={0} end={7} duration={3000} />}
                   </h1>
                   <h1>M</h1>

@@ -63,6 +63,10 @@
     font-size: 13px !important;
   }
 }
+.numbers h1{
+  font-size: 45px !important;
+  /* display: none; */
+}
 .trackingNum h1 {
   font-size: 25px;
   white-space: nowrap;
@@ -220,6 +224,7 @@
   /* width: 100%; */
   /* background: red; */
   height: 400px;
+  overflow: hidden;
   position: relative;
 }
 .cardDeck:nth-child(1) img,
@@ -332,6 +337,10 @@
   height: 100%;
   object-fit: cover;
   display: block;
+}
+.left img{
+  width: 100%;
+  height: 100%;
 }
 .leftB {
   width: 80%;
