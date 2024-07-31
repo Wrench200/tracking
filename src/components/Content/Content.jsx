@@ -99,8 +99,9 @@ function Content() {
     e.preventDefault();
     setError(null); // Reset error state
     setShipments(null); // Reset shipment state
-    console.log(trackingNumber);
     try {
+      // console.log(trackingNumber);
+      console.log("Fetching shipment data...");
       const res = await fetch("/api/getShipment", {
         method: "POST",
         headers: {
@@ -180,6 +181,8 @@ function Content() {
 
   return (
     <>
+    
+
       <section className="central">
         {loading && (
           <div className="loadingStuff">
@@ -200,7 +203,7 @@ function Content() {
             position: "relative",
           }}
         >
-          <h1>Track you shipment :</h1>
+          <h1>Track Your Delivery</h1>
           <div className={style.trackBox}>
             <input
               type="text"
@@ -226,14 +229,12 @@ function Content() {
                   </svg>
                 </div>
               </div>
-              <span>Follow</span>
+              <span>Track</span>
             </button>{" "}
           </div>
-          <p style={{ color: "#85888d" }}>EX : 1234</p>
+          <p style={{ color: "#85888d" }}>EX : 637612716217</p>
           <p
             style={{
-              position: "absolute",
-              bottom: "-5em",
               color: "red",
             }}
           >
@@ -244,24 +245,59 @@ function Content() {
 
       <section className="central">
         {" "}
+        <div data-aos="fade-up" className="grid space-y-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center justify-center items-center container shadow-lg my-10 p-4 space-x-2">
+        <div className="flex flex-col justify-center items-center ">
+          <div className="w-[15rem]">
+            <Image width={500} height={500} src="/images/bx.svg" alt="" />
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <h2 className="text-red-700 font-bold my-2">Full Range Services</h2>
+            <p className="w-4/5 ">
+              Your all-in-one solution for Local, National and International delivery.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col justify-center items-center ">
+          <div className="w-[15rem]">
+            <Image width={500} height={500} src="/images/lock.svg" alt="" />
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <h2 className="text-red-700 font-bold my-2">Total Status Visibility of Your Shipment</h2>
+            <p className="w-4/5 ">
+              Tracking of each Quicklift shipment with complete transparency.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col justify-center items-center ">
+          <div className="w-[15rem]">
+            <Image width={500} height={500} src="/images/support.svg" alt="" />
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <h2 className="text-red-700 font-bold my-2">24/7 Customer Support</h2>
+            <p className="w-4/5 ">Quick response guaranteed around the clock. Don't hesitate to contact us </p>
+          </div>
+        </div>
+      </div>
         <div className="numbers" ref={ref}>
           <div className={style.left} data-aos="fade-up">
             <Image
               width={1000}
               height={1000}
               src={"/images/images-compagnie-livraison.png"}
+              alt=""
             />
           </div>
           <div className={style.right} data-aos="fade-up">
             <h1 className={style.introa}>
-              Company Offering Domestic and International Courier Services
+              We Offer Domestic and International Courier Services
             </h1>
-            <p>
-              FastLane Global Courier is a leader in local and international
-              parcel delivery and express mail. We provide fast, reliable
-              shipping in Canada and around the world. Our success is based on
-              impeccable customer service. We guarantee satisfaction and
-              confidence with every shipment.
+            <p className="text-[16px]">
+              Quicklift is a leader in local and international parcel delivery
+              and express mail. We provide fast, reliable shipping in Canada and
+              around the world. Our success is based on impeccable customer
+              service. We guarantee satisfaction and confidence with every
+              shipment.
             </p>
             <div className={style.numbers}>
               <div className={style.line}>
@@ -272,7 +308,7 @@ function Content() {
                   <h1>M</h1>
                   <h1>+</h1>
                 </div>
-                <p>orders since being founded in 1995</p>
+                <p>Orders since being founded in 2001</p>
               </div>
               <div className={style.line}>
                 <div className={style.text}>
@@ -282,7 +318,7 @@ function Content() {
                     )}
                   </h1>
                 </div>
-                <p>active customers</p>
+                <p>Active Customers</p>
               </div>
               <div className={style.line}>
                 <div className={style.text}>
@@ -294,18 +330,18 @@ function Content() {
                   </h1>
                   <h1>%</h1>
                 </div>
-                <p>of orders delivered on time</p>
+                <p>Of orders delivered on time</p>
               </div>
               <div className={style.line}>
                 <div className={style.text}>
                   <h1>
                     {isVisible && (
-                      <Counter start={0} end={200} duration={3000} />
+                      <Counter start={0} end={300} duration={3000} />
                     )}
                   </h1>
                   <h1>+</h1>
                 </div>
-                <p>delivery drivers in Worldwide</p>
+                <p>Delivery drivers in Worldwide</p>
               </div>
             </div>
           </div>
@@ -315,10 +351,10 @@ function Content() {
         <section className="central">
           <div className={style.top}>
             <h1 className={style.toph1}>The route to simplified shipping</h1>
-            <p className={style.topp}>
-              AtFastLane Global Courier, we offer a seamless delivery experience
-              for local, national and international deliveries! For a simplified
-              shipping experience, follow these steps.
+            <p className={style.bp}>
+              At Quicklift, we offer a seamless delivery experience for local,
+              national and international deliveries! For a simplified shipping
+              experience, follow these steps.
             </p>
           </div>
           <div className={style.boxes}>
@@ -381,14 +417,14 @@ function Content() {
       <section className="central">
         <section className={style.cardTwo}>
           <div className={style.top}>
-            <h1 className={style.toph1}>
+            <h1 className="text-[38px] font-extrabold text-red-700 text-center">
               Are you looking for reliable and professional shipping services?
             </h1>
-            <p className={style.topp}>
-              FastLane Global Courier offers a turnkey, professional shipping
-              and delivery service. Trust us for simplified shipping, tracking
-              and delivery of parcels of all types within your province, across
-              Canada, to the U.S. or around the world
+            <p className={style.bp}>
+              Quicklift offers a turnkey, professional shipping and delivery
+              service. Trust us for simplified shipping, tracking and delivery
+              of parcels of all types within your province, across Canada, to
+              the U.S. or around the world
             </p>
           </div>
           <div className={style.boxes}>
@@ -402,6 +438,7 @@ function Content() {
                 width={1000}
                 height={1000}
                 src={"/images/pexels-pixabay-269790.jpg"}
+                alt=''
               />
               <h1>International Shipping</h1>
             </div>
@@ -415,6 +452,7 @@ function Content() {
                 width={1000}
                 height={1000}
                 src={"/images/pexels-rdne-7363102.jpg"}
+                alt=''
               />
               <h1>Same day delivery </h1>
             </div>
@@ -434,11 +472,11 @@ function Content() {
           </div>
         </section>
         <section className={style.benefits}>
-          <h1>Broaden your horizons withFastLane Global Courier!</h1>
+          <h1>Broaden your horizons with Quicklift!</h1>
           <p className={style.bp}>
-            FastLane Global Courier offers more than just international parcel
-            shipping! We provide additional services to make your Canadian and
-            international shipments smoother and easier.
+            Quicklift offers more than just international parcel shipping! We
+            provide additional services to make your Canadian and international
+            shipments smoother and easier.
           </p>
           <div className={style.floatB} data-aos="fade-up" data-aos-delay={100}>
             <div className={style.leftB}>
@@ -450,9 +488,9 @@ function Content() {
               />
             </div>
             <div className={style.rightB}>
-              <h3>FastLane Logistics services</h3>
+              <h3>Quicklift Logistics services</h3>
               <p>
-                FastLane Logistics professionals can guarantee fast shipping
+                Quicklift Logistics professionals can guarantee fast shipping
                 worldwide for bulky or fragile freight.
               </p>
               <p>
@@ -472,7 +510,7 @@ function Content() {
             <div className={style.rightB}>
               <h3>International art transportation services</h3>
               <p>
-                FastLane provides authentic international art shipping for
+                Quicklift provides authentic international art shipping for
                 gallery owners, auction houses, artists and collectors.{" "}
               </p>
               <p>
@@ -485,12 +523,13 @@ function Content() {
           </div>
         </section>
       </section>
+    
 
-      <div className="info2">
-        {/* ONLINE & OFFLINE */}
+      {/* <div className="info2">
+       
         <div className="image2">
           {
-            <div className={`revs ${revCount === 1 && "boxShow"}`}>
+            <div className={` ${revCount === 1 && "boxShow"}`}>
               <h1>TESTIMONIALS</h1>
               <div className={`boxImage`}>
                 <Image
@@ -557,13 +596,13 @@ function Content() {
               </div>
               <p>
                 Bruce and Jet have landed safely in our arms in San Francisco. I
-                just wanted to thank YOU and the entire FastLane Global for
-                helping us with this process from EU to America. I especially
-                appreciate how easy you made it for us when we had to reschedule
-                the flight with such short notice because of my husband’s
-                emergency knee surgery. Thank you for making it so seamless and
-                for taking such great care of our babies. I cannot sing your
-                praises loudly enough.
+                just wanted to thank YOU and the entire Quickliftfor helping us
+                with this process from EU to America. I especially appreciate
+                how easy you made it for us when we had to reschedule the flight
+                with such short notice because of my husband’s emergency knee
+                surgery. Thank you for making it so seamless and for taking such
+                great care of our babies. I cannot sing your praises loudly
+                enough.
               </p>
               <h1
                 style={{
@@ -613,9 +652,9 @@ function Content() {
                 />
               </div>
               <p>
-                FastLane Global Service brought my Car from USA to me in
-                Australia after I was transferred. It saved me a lot of money
-                buying a new car.
+                QuickliftService brought my Car from USA to me in Australia
+                after I was transferred. It saved me a lot of money buying a new
+                car.
               </p>
               <h1
                 style={{
@@ -639,12 +678,12 @@ function Content() {
                 />
               </div>
               <p>
-                I have been using FastLane Global for my international shipping
-                needs, and I could not be more satisfied. Their service is
-                top-notch, with prompt deliveries and excellent customer
-                support. The tracking system is reliable, keeping me informed at
-                every step. Highly recommend for anyone needing a trustworthy
-                logistics partner
+                I have been using Quickliftfor my international shipping needs,
+                and I could not be more satisfied. Their service is top-notch,
+                with prompt deliveries and excellent customer support. The
+                tracking system is reliable, keeping me informed at every step.
+                Highly recommend for anyone needing a trustworthy logistics
+                partner
               </p>
               <h1
                 style={{
@@ -702,7 +741,7 @@ function Content() {
             alt="image"
           />
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

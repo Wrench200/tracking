@@ -16,16 +16,18 @@
 .serve {
   display: flex;
   padding: 1em;
+  justify-content: space-between;
+  width: 100%;
 
   background-color: #133984;
 }
 .lefts {
-  width: 60%;
+  
   display: grid;
   /* background-color: red; */
-  margin: 0 auto;
+ 
   /* padding: 2em; */
-  place-content: center;
+  
 }
 .rights {
   display: flex;

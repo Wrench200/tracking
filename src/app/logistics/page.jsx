@@ -60,7 +60,7 @@ function Page() {
         <p>
           Trust us to strengthen your supply chain, facilitating seamless
           shipments across Canada, the U.S., and worldwide. Partner with
-          FastLane for unparalleled logistics expertise and service excellence.{" "}
+          Quickliftfor unparalleled logistics expertise and service excellence.{" "}
         </p>
       </div>
       <section>
@@ -71,7 +71,7 @@ function Page() {
               Whether you require cross-border shipments, streamlined pallet
               shipping services, parcel delivery within Canada, shipping full or
               partial loads to the U.S., or simplified international shipping
-              solutions, FastLane is your trusted partner
+              solutions, Quickliftis your trusted partner
             </p>
             <p>
               Our team of logistics professionals is dedicated to designing
@@ -79,7 +79,7 @@ function Page() {
               needs. From selecting the ideal mode of transport to ensuring
               timely delivery, we are committed to providing you with efficient
               and reliable solutions for all your shipping requirements. Partner
-              with FastLane for seamless international shipping and logistics
+              with Quickliftfor seamless international shipping and logistics
               services that exceed your expectations.
             </p>
           </div>
@@ -213,7 +213,7 @@ function Page() {
                 shipping services . Our logistics consultants will be happy to
                 discuss your specific requirements, share insights, and answer
                 any questions you may have. With our commitment to excellence
-                and customer satisfaction, you can trust FastLane to deliver
+                and customer satisfaction, you can trust Quickliftto deliver
                 reliable and efficient solutions tailored to your business
                 needs.
               </p>
@@ -224,7 +224,7 @@ function Page() {
                   international courier services.
                 </span>
                 <p>
-                  Whatever your shipping requirements may be, FastLane has the
+                  Whatever your shipping requirements may be, Quicklifthas the
                   expertise and resources to meet them with precision and
                   efficiency.
                 </p>

@@ -35,21 +35,22 @@ function Page() {
         location={"/contact"}
         // button={"CONTACT US"}
         img={"/images/banr.jpg"}
-        h2Text={"FastLane Global Courier:"}
-        spanText={"Your trusted partner for international shipping"}
+        h2Text={"Quicklift:"}
+        pText={"Your trusted partner for international shipping"}
         button={"CONTACT US"}
+        height={'40dvh'}
       />
+      <div className="container flex flex-col max-w-[1200px] justify-center items-center">
       <div className={style.floatB}>
         <h1>Reliable and Affordable International Shipping Services</h1>
 
         <p>
-          FastLane Global Courier offers swift, dependable international
-          shipping at competitive rates. With a legacy of over 25 years, our
-          extensive network reaches across more than 220 countries and
-          territories. Rest assured, your shipment is guaranteed to reach its
-          destination on time. Our commitment? Delivering nothing short of the
-          finest, comprehensive international courier service at the optimal
-          price.{" "}
+          Quicklift offers swift, dependable international shipping at
+          competitive rates. With a legacy of over 25 years, our extensive
+          network reaches across more than 220 countries and territories. Rest
+          assured, your shipment is guaranteed to reach its destination on time.
+          Our commitment? Delivering nothing short of the finest, comprehensive
+          international courier service at the optimal price.{" "}
         </p>
         <p>
           Benefit from our tailored and cost-effective turnkey solutions,
@@ -61,7 +62,7 @@ function Page() {
         <p>
           Trust us to strengthen your supply chain, facilitating seamless
           shipments across Canada, the U.S., and worldwide. Partner with
-          FastLane for unparalleled logistics expertise and service excellence.{" "}
+          Quickliftfor unparalleled logistics expertise and service excellence.{" "}
         </p>
       </div>
       <section>
@@ -76,10 +77,10 @@ function Page() {
                 margin: "3em 0",
               }}
             >
-              FastLane Global Courier provides express international shipping
-              services for individual parcels as well as grouped shipments. Our
-              extensive network encompasses numerous multiple countries offering
-              both export and import express delivery solutions.
+              Quicklift provides express international shipping services for
+              individual parcels as well as grouped shipments. Our extensive
+              network encompasses numerous multiple countries offering both
+              export and import express delivery solutions.
             </p>
           </div>
         </div>
@@ -94,7 +95,7 @@ function Page() {
               </div>
               <div className={style.cardbot}>
                 <p>
-                  The FastLane Express Export Service guarantees fast, on-time
+                  The QuickliftExpress Export Service guarantees fast, on-time
                   delivery to over 220 countries. Our competitive rates include
                   customs clearance.
                 </p>
@@ -109,7 +110,7 @@ function Page() {
               </div>
               <div className={style.cardbot}>
                 <p>
-                  The FastLane Express Plus Export Service assures swift
+                  The QuickliftExpress Plus Export Service assures swift
                   delivery to over 220 countries including customs clearance and
                   backed by our a money-back satisfaction guarantee. Our Express
                   Plus service guarantees delivery on the scheduled day and
@@ -128,7 +129,7 @@ function Page() {
                 <h2>Tailor-made to your needs</h2>
 
                 <p>
-                  The FastLane Express Import Export Service provides secure and
+                  The QuickliftExpress Import Export Service provides secure and
                   dependable international shipments from around the world.
                   Customs clearance fees are included.
                 </p>
@@ -138,18 +139,17 @@ function Page() {
           <div className="central">
             <div className={style.botInfo} data-aos={"fade-in"}>
               <h1>
-                FastLane Global Courier: your shipping solution for
-                international parcel delivery
+                Quicklift: your shipping solution for international parcel
+                delivery
               </h1>
               <p>
-                Rely on FastLane Global Courier for express international
-                shipping. Our premium customer service encompasses express
-                shipping solutions within Canada, to the U.S. and
-                internationally to over 220 countries worldwide. Select from a
-                diverse array of options, including document, parcel and pallet
-                shipping (with both LCL and FCL options), as well as specialized
-                services such as artwork shipping, all offered at competitive
-                rates.
+                Rely on Quicklift for express international shipping. Our
+                premium customer service encompasses express shipping solutions
+                within Canada, to the U.S. and internationally to over 220
+                countries worldwide. Select from a diverse array of options,
+                including document, parcel and pallet shipping (with both LCL
+                and FCL options), as well as specialized services such as
+                artwork shipping, all offered at competitive rates.
               </p>
               <div>
                 <span>
@@ -158,7 +158,7 @@ function Page() {
                   international courier services.
                 </span>
                 <p>
-                  Whatever your shipping requirements may be, FastLane has the
+                  Whatever your shipping requirements may be, Quicklifthas the
                   expertise and resources to meet them with precision and
                   efficiency.
                 </p>
@@ -197,9 +197,9 @@ function Page() {
               </div>
               <div className={style.cardbot}>
                 <p>
-                  FastLane Global Courier offers global coverage and custom
-                  solutions for international parcel shipments. We treat each
-                  package with care and precision.{" "}
+                  Quicklift offers global coverage and custom solutions for
+                  international parcel shipments. We treat each package with
+                  care and precision.{" "}
                 </p>
               </div>
             </div>
@@ -220,17 +220,17 @@ function Page() {
           </div>
           <div className="central">
             <div className={style.botInfo} data-aos={"fade-in"}>
-              <h1>Simplify your international shipping with FastLane </h1>
+              <h1>Simplify your international shipping with Quicklift</h1>
               <p>
                 Contact our team for a quick estimate or to find out more about
                 our services.{" "}
               </p>
               <div>
                 <p>
-                  Simplify your international shipping with FastLane Contact our
+                  Simplify your international shipping with QuickliftContact our
                   team for a quick estimate or to find out more about our
-                  services. Count on FastLane Global Worldwide Courier for
-                  express international delivery of parcels, envelopes or other
+                  services. Count on QuickliftWorldwide Courier for express
+                  international delivery of parcels, envelopes or other
                   specialized freight. Contact <Link href={smsLink}>{""}</Link>{" "}
                   to open an account today. Let us leverage our international
                   shipping expertise to serve for you.
@@ -247,8 +247,10 @@ function Page() {
         </div>
         <div className="central "></div>
 
-        <Footer />
       </section>
+
+      </div>
+        <Footer />
     </>
   );
 }

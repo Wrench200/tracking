@@ -30,16 +30,16 @@ function Banner({ spanText, h2Text, pText, img, button, location, height }) {
   ];
 
   return (
-    <div>
-      <div className="slider" style={{ height: height }}>
-        <div className="list">
-          <div className={"items active"}>
-            <Image width={1000} height={1000} src={img} alt={"image"} />
-            <div className="content">
-              <h2>{h2Text}</h2>
-              <span>{spanText}</span>
-              <p>{pText}</p>
-              <Link className="discover" href={location}>{button}</Link>
+    <div style={{ height: height }} className={" bg-banner-bg h-dvh bg-no-repeat bg-cover bg-blend-multiply bg-stone-600 "}>
+      <div className="h-full" >
+        <div className="list h-full">
+          <div className={" w-full container flex flex-col h-full justify-center items-center "}>
+            
+            <div className=" text-center h-full flex flex-col justify-center items-center w-full">
+              <h2 className={"banner-text text-[30px] md:text-[60px] text-red-500"}>{h2Text}</h2>
+            
+              <p className={"italic-bold w-4/5 text-[16px] md:text-[20px]"}>{pText}</p>
+              <Link className="px-[2em] py-[0.5em] border-0 bg-red-500 rounded-lg w-fit text-white cursor-pointer hover:bg-red-700" href={location}>{button}</Link>
             </div>
           </div>
         </div>

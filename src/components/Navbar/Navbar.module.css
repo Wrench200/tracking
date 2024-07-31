@@ -183,8 +183,7 @@
   .mobileMenu .active {
     color: #eb2b2b;
   }
-  .mobileMenu i{
-    
+  .mobileMenu i {
     padding: 1em;
   }
   .mobileMenu li a {
@@ -192,9 +191,9 @@
     padding: 1em;
     width: 90%;
   }
-  
-.active a {
-  border-bottom: none !important;
-  color: #eb2b2b !important;
-}
+
+  .active a {
+    border-bottom: none !important;
+    color: #eb2b2b !important;
+  }
 }

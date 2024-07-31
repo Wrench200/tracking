@@ -27,42 +27,7 @@ function Footer() {
 
   return (
     <>
-      <div className={style.serve}>
-        <div className={style.line}>
-          <div className={style.lefts}>
-            <Image width={500} height={500} src="/images/bx.svg" alt="" />
-          </div>
-          <div className={style.rights}>
-            <h2>Full Range Services</h2>
-            <p>
-              Your all-in-one delivery solution: Local, National, USA,
-              International, Cargo and Customs Clearance.
-            </p>
-          </div>
-        </div>
-        <div className={style.line}>
-          <div className={style.lefts}>
-            <Image width={500} height={500} src="/images/lock.svg" alt="" />
-          </div>
-          <div className={style.rights}>
-            <h2>Total Status Visibility of Your Shipment</h2>
-            <p>
-              Real-time tracking of eachFastLane shipment offers complete
-              transparency.{" "}
-            </p>
-          </div>
-        </div>
-
-        <div className={style.line}>
-          <div className={style.lefts}>
-            <Image width={500} height={500} src="/images/support.svg" alt="" />
-          </div>
-          <div className={style.rights}>
-            <h2>24/7 Customer Support</h2>
-            <p>Quick response guaranteed around the clock.</p>
-          </div>
-        </div>
-      </div>
+      
       <main class="footer">
         <div className="central">
           <footer>

@@ -29,13 +29,15 @@ export default function Home() {
     <>
       <Navbar />
       <Banner
-        h2Text={"Ship parcels quickly "}
+        h2Text={"Quicklift Logistics "}
         pText={
-          "Our company offers fast, reliable and affordable delivery services around the globe!"
+          " fast, reliable and affordable delivery services at your fingertips!"
         }
-        spanText={"national and worldwide"}
-        img={"/images/pexels-albinberlin-906982.jpg"}
+        spanText={"Your gateway to any Destination in the World"}
+        img={"/images/banner-bg.png"}
         location={""}
+        button={"Explore More"}
+        height={'70dvh'}
 
       />
       <Content />

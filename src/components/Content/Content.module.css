@@ -4,7 +4,7 @@
   display: flex;
   background-color: #edecec;
   padding: 0.5em;
-  width: 40%;
+  width: 50%;
   border-radius: 7px;
   justify-content: space-between;
 }
@@ -24,9 +24,15 @@
   padding: 3em;
   box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.15);
   border-left: 8px solid #eb2b2b;
+  border-right: 8px solid #eb2b2b;
   position: relative;
   z-index: 2000;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   /* background-color: red; */
+  bottom:8rem;
 }
 @media screen and (max-width: 740px) {
   .trackBox {
@@ -71,7 +77,7 @@
 .line {
   display: flex;
   align-items: center;
-  /* gap: 1em; */
+  gap: 0.5em;
   /* justify-content: space-between; */
 }
 .right h1:first-child {
@@ -93,12 +99,13 @@
 .text h1 {
   font-weight: 700;
   font-size: 40px;
-  color: #133984;
+  color: #b91c1c;
 }
 .text {
   display: flex;
   align-items: center;
   gap: 0.5em;
+  width: 30%;
 }
 
 .right .numbers p {
@@ -110,10 +117,10 @@
 .introa {
   font-size: 40px;
   font-weight: 700;
-  color: #133984;
+  color: #b91c1c;
 }
 .steps {
-  background-color: #04213e;
+  background-color: #6d1111fb;
   color: white;
   padding: 2em 0;
 }
@@ -121,21 +128,21 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2em;
-  margin: 2em 0;
+  margin: 5em 0;
   /* width: 50%; */
   /* display: none; */
 }
 .card {
-  background-color: #133984;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
   flex-direction: column;
   gap: 2em;
   border-radius: 5px;
   text-align: center;
-
   box-sizing: border-box;
   padding: 2em;
   position: relative;
+  background-color: #b91c1c75;
 }
 .card img {
   width: 100%;
@@ -160,14 +167,13 @@
   font-size: 18px;
 }
 .step {
-  position: absolute;
-  top: -30px;
-  background-color: #eb2b2b;
+text-align: center;
+  color: white;
   /* border-radius: 5px; */
   padding: 0.5em 2em;
-  left: 50%;
+
   font-size: 20px;
-  transform: translateX(-50%);
+ 
   font-weight: 600;
 }
 @media screen and (max-width: 760px) {
@@ -205,13 +211,14 @@
 .toph1 {
   font-size: 38px;
   font-weight: 700;
+  text-align: center;
 }
 .topp {
   font-size: 17px;
   margin: 1em 0;
 }
 .top {
-  width: 70%;
+  width: 100%;
   margin: 2em 0;
 }
 
@@ -267,13 +274,13 @@
   font-size: 20px;
 }
 .cardDeck:nth-child(2):hover::after {
-  background: #04213e;
+  background: #b91c1c;
   content: "Guaranteed express, parcel deliver anywhere in the country via our courier service";
 }
 .cardDeck:nth-child(1):hover::after {
-  background: #04213e;
+  background: #b91c1c;
 
-  content: "FastLane Global Courier makes international shipping wasy thanks to accurate tracking and reliable delivery around the world.";
+  content: "Quicklift makes international shipping wasy thanks to accurate tracking and reliable delivery around the world.";
 }
 .cardDeck:nth-child(3) {
   background-color: #eb2b2b;
@@ -291,12 +298,18 @@
   border: none;
   padding: 1em;
   width: fit-content;
-  margin: 0 auto;
+  margin: 2px auto;
   border-radius: 5px;
   font-size: 20px;
   font-size: 14px !important;
   font-weight: 600;
   cursor: pointer;
+}
+.cardDeck:nth-child(3) button:hover {
+  background-color: #b91c1c;
+  color: white;
+  border-color:white;
+  transition: all;
 }
 
 .cardDeck:nth-child(3) h1 {
@@ -310,7 +323,7 @@
 }
 .benefits h1 {
   font-size: 40px;
-  color: rgb(0, 36, 93);
+  color:#b91c1c;
   font-weight: 800;
   width: 70%;
   margin: 0 auto;
@@ -346,7 +359,7 @@
 .rightB h3 {
   font-size: 25px;
   font-weight: 700;
-  color: rgb(0, 36, 93);
+  color:#b91c1c;
 }
 .rightB p {
   font-size: 18px;
