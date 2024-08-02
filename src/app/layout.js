@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         />{" "}
-        <link rel="icon" href="/favicon.ico?v=4" />
+        <link rel="icon" href="/favicon.ico?v=5" />
       </Head>
       <body className={inter.className}>
         <ShipmentProvider>{children}</ShipmentProvider>
