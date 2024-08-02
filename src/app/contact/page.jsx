@@ -6,7 +6,6 @@ import Navbar from "@/components/Navbar/Navbar";
 import Banner from "@/components/Banner/Banner";
 import Footer from "@/components/Footer/Footer";
 
-
 function Page() {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -29,7 +28,7 @@ function Page() {
     e.preventDefault();
     const { firstName, lastName, phoneNumber, email, address, message } =
       formData;
-    const mailtoLink = `mailto:fastlaneglobalagency@gmail.com?subject=Contact%20Form%20Submission&body=Name:%20${firstName}%20${lastName}%0APhone%20Number:%20${phoneNumber}%0AEmail:%20${email}%0AAddress/State:%20${address}%0AMessage/Comment:%20${message}`;
+    const mailtoLink = `mailto:Wavecrest Logisticsagency@gmail.com?subject=Contact%20Form%20Submission&body=Name:%20${firstName}%20${lastName}%0APhone%20Number:%20${phoneNumber}%0AEmail:%20${email}%0AAddress/State:%20${address}%0AMessage/Comment:%20${message}`;
     window.location.href = mailtoLink;
   };
 

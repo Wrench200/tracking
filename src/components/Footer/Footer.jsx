@@ -9,7 +9,7 @@ function Footer() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const mailtoLink = `mailto:fastlaneglobalagency@gmail.com?subject=Contact%20Form`;
+    const mailtoLink = `mailto:Wavecrest Logisticsagency@gmail.com?subject=Contact%20Form`;
     window.location.href = mailtoLink;
   };
 
@@ -27,7 +27,6 @@ function Footer() {
 
   return (
     <>
-      
       <main class="footer">
         <div className="central">
           <footer>
@@ -39,7 +38,7 @@ function Footer() {
                     onClick={() => navigate.push("/")}
                   >
                     <Image
-                      src={"/images/Screenshot__217_-removebg-preview.png"}
+                      src={"/images/Screenshot__281_-removebg-preview.png"}
                       width={500}
                       height={500}
                       alt="image"
@@ -63,7 +62,7 @@ function Footer() {
                   <div>
                     <form onSubmit={handleSubmit} className={style.email}>
                       <p>Email:</p>
-                      <button>fastlaneglobalagency@gmail.com</button>
+                      <button>Wavecrest Logisticsagency@gmail.com</button>
                     </form>
                   </div>
                 </div>
@@ -165,7 +164,7 @@ function Footer() {
 
               <div class="footer-bottom">
                 <p class="copyright">
-                  &copy; {year} FasrLane Global. All Rights Reserved
+                  &copy; {year} Wavecrest logistics. All Rights Reserved
                   <Link href="#" class="copyright-link"></Link>
                 </p>
               </div>

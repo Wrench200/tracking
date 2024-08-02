@@ -60,7 +60,7 @@
   font-size: 110px;
 }
 .box:first-child i {
-  color: royalblue;
+  color: #b91c1c;
 }
 .box:nth-child(2) i {
   color: forestgreen;
@@ -115,7 +115,7 @@
   gap: 1.5em;
   justify-content: center;
   width: 95%;
-  border-bottom: 8px solid #eb2b2b;
+  border-bottom: 8px solid#b91c1c;
   box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin: 0 auto;
@@ -128,7 +128,7 @@
 .abouts h1,
 .introa {
   font-size: 36px;
-  color: #133984;
+  color: #b91c1c;
   font-weight: 700;
 }
 .floatB p,
@@ -143,7 +143,7 @@
 }
 .buttons button {
   padding: 1em 2em;
-  background-color: #eb2b2b;
+  background-color: #b91c1c;
   color: white;
   font-weight: 600;
   font-size: 16px;
@@ -212,7 +212,7 @@
 .detailedInfo h1 {
   font-size: 40px;
   font-weight: 700;
-  color: #133984;
+  color: #b91c1c;
 }
 .introa {
   margin: 2em auto;
@@ -241,7 +241,7 @@
   gap: 1em;
   padding: 2em;
   border-radius: 6px;
-  background-color: #133984;
+  background-color: #b91c1c;
   color: white;
 }
 .statLine h2 {
@@ -268,7 +268,7 @@
   .floatB h1 {
     font-size: 20px;
   }
-  
+
   /* .buttons button {
     font-size: 12px;
   }
@@ -281,7 +281,7 @@
   }
   .buttons a {
     border: none;
-    color: #eb2b2b;
+    color: #b91c1c;
     font-size: 20px;
     text-decoration: none;
   }
@@ -308,7 +308,7 @@
   .stats {
     /* padding: 1em; */
   }
-  .detailedInfo{
+  .detailedInfo {
     padding: 2em 1em;
   }
 }

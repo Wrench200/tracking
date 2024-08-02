@@ -42,7 +42,7 @@ export const POST = async (req, res) => {
       console.log(process.env.EMAIL_PASS);
 
       let mailOptions = {
-        from: `"FASTLANEGLOBAL" <${process.env.EMAIL_USER}>`,
+        from: `"Wavecrest Logistics" <${process.env.EMAIL_USER}>`,
         to: shipment.receiverEmail,
         subject: `Shipment Status Update for Tracking Number ${trackingNumber}`,
         html: ` <div style="font-family: Arial, sans-serif; padding: 20px; max-width: 600px; margin: auto; border: 1px solid #ddd; border-radius: 10px;">

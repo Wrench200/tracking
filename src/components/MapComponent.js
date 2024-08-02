@@ -73,7 +73,7 @@ const MapComponent = ({ senderCoords, receiverCoords, trackingNumber }) => {
                   "line-cap": "round",
                 },
                 paint: {
-                  "line-color": "royalblue",
+                  "line-color": "#eb2b2",
                   "line-width": 6,
                 },
               });

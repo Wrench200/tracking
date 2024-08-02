@@ -7,7 +7,7 @@
   transition: 0.3s linear;
 }
 .left {
-  width: 10em;
+  width: 13em;
   cursor: pointer;
   height: 4em;
   display: grid;
@@ -44,12 +44,12 @@
   position: relative;
 }
 .right ul li:hover a {
-  border-bottom: 3px solid #eb2b2b;
-  color: #eb2b2b !important;
+  border-bottom: 3px solid#b91c1c;
+  color: #b91c1c !important;
 }
 .active a {
-  border-bottom: 3px solid #eb2b2b !important;
-  color: #eb2b2b !important;
+  border-bottom: 3px solid#b91c1c !important;
+  color: #b91c1c !important;
 }
 .travel {
   position: absolute;
@@ -88,7 +88,7 @@
   text-transform: none;
 }
 .travel ul li:hover {
-  background-color: #eb2b2b;
+  background-color: #b91c1c;
   color: white;
 }
 .travel ul li:hover a {
@@ -157,7 +157,7 @@
   min-width: 100vw;
 }
 .mobileMenu li.active {
-  border-left: 5px solid #eb2b2b;
+  border-left: 5px solid#b91c1c;
 }
 
 @media screen and (max-width: 740px) {
@@ -181,7 +181,7 @@
     font-size: 20px;
   }
   .mobileMenu .active {
-    color: #eb2b2b;
+    color: #b91c1c;
   }
   .mobileMenu i {
     padding: 1em;
@@ -194,6 +194,6 @@
 
   .active a {
     border-bottom: none !important;
-    color: #eb2b2b !important;
+    color: #b91c1c !important;
   }
 }

@@ -181,8 +181,6 @@ function Content() {
 
   return (
     <>
-    
-
       <section className="central">
         {loading && (
           <div className="loadingStuff">
@@ -245,40 +243,58 @@ function Content() {
 
       <section className="central">
         {" "}
-        <div data-aos="fade-up" className="grid space-y-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center justify-center items-center container shadow-lg my-10 p-4 space-x-2">
-        <div className="flex flex-col justify-center items-center ">
-          <div className="w-[15rem]">
-            <Image width={500} height={500} src="/images/bx.svg" alt="" />
+        <div
+          data-aos="fade-up"
+          className="grid space-y-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center justify-center items-center container shadow-lg my-10 p-4 space-x-2"
+        >
+          <div className="flex flex-col justify-center items-center ">
+            <div className="w-[15rem]">
+              <Image width={500} height={500} src="/images/bx.svg" alt="" />
+            </div>
+            <div className="flex flex-col justify-center items-center">
+              <h2 className="text-red-700 font-bold my-2">
+                Full Range Services
+              </h2>
+              <p className="w-4/5 ">
+                Your all-in-one solution for Local, National and International
+                delivery.
+              </p>
+            </div>
           </div>
-          <div className="flex flex-col justify-center items-center">
-            <h2 className="text-red-700 font-bold my-2">Full Range Services</h2>
-            <p className="w-4/5 ">
-              Your all-in-one solution for Local, National and International delivery.
-            </p>
+          <div className="flex flex-col justify-center items-center ">
+            <div className="w-[15rem]">
+              <Image width={500} height={500} src="/images/lock.svg" alt="" />
+            </div>
+            <div className="flex flex-col justify-center items-center">
+              <h2 className="text-red-700 font-bold my-2">
+                Total Status Visibility of Your Shipment
+              </h2>
+              <p className="w-4/5 ">
+                Tracking of each Wavecrest shipment with complete transparency.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="flex flex-col justify-center items-center ">
-          <div className="w-[15rem]">
-            <Image width={500} height={500} src="/images/lock.svg" alt="" />
-          </div>
-          <div className="flex flex-col justify-center items-center">
-            <h2 className="text-red-700 font-bold my-2">Total Status Visibility of Your Shipment</h2>
-            <p className="w-4/5 ">
-              Tracking of each Quicklift shipment with complete transparency.
-            </p>
-          </div>
-        </div>
 
-        <div className="flex flex-col justify-center items-center ">
-          <div className="w-[15rem]">
-            <Image width={500} height={500} src="/images/support.svg" alt="" />
-          </div>
-          <div className="flex flex-col justify-center items-center">
-            <h2 className="text-red-700 font-bold my-2">24/7 Customer Support</h2>
-            <p className="w-4/5 ">Quick response guaranteed around the clock. Don't hesitate to contact us </p>
+          <div className="flex flex-col justify-center items-center ">
+            <div className="w-[15rem]">
+              <Image
+                width={500}
+                height={500}
+                src="/images/support.svg"
+                alt=""
+              />
+            </div>
+            <div className="flex flex-col justify-center items-center">
+              <h2 className="text-red-700 font-bold my-2">
+                24/7 Customer Support
+              </h2>
+              <p className="w-4/5 ">
+                Quick response guaranteed around the clock. Don't hesitate to
+                contact us{" "}
+              </p>
+            </div>
           </div>
         </div>
-      </div>
         <div className="numbers" ref={ref}>
           <div className={style.left} data-aos="fade-up">
             <Image
@@ -293,7 +309,7 @@ function Content() {
               We Offer Domestic and International Courier Services
             </h1>
             <p className="text-[16px]">
-              Quicklift is a leader in local and international parcel delivery
+              Wavecrest is a leader in local and international parcel delivery
               and express mail. We provide fast, reliable shipping in Canada and
               around the world. Our success is based on impeccable customer
               service. We guarantee satisfaction and confidence with every
@@ -352,7 +368,7 @@ function Content() {
           <div className={style.top}>
             <h1 className={style.toph1}>The route to simplified shipping</h1>
             <p className={style.bp}>
-              At Quicklift, we offer a seamless delivery experience for local,
+              At Wavecrest , we offer a seamless delivery experience for local,
               national and international deliveries! For a simplified shipping
               experience, follow these steps.
             </p>
@@ -421,7 +437,7 @@ function Content() {
               Are you looking for reliable and professional shipping services?
             </h1>
             <p className={style.bp}>
-              Quicklift offers a turnkey, professional shipping and delivery
+              Wavecrest offers a turnkey, professional shipping and delivery
               service. Trust us for simplified shipping, tracking and delivery
               of parcels of all types within your province, across Canada, to
               the U.S. or around the world
@@ -438,7 +454,7 @@ function Content() {
                 width={1000}
                 height={1000}
                 src={"/images/pexels-pixabay-269790.jpg"}
-                alt=''
+                alt=""
               />
               <h1>International Shipping</h1>
             </div>
@@ -452,7 +468,7 @@ function Content() {
                 width={1000}
                 height={1000}
                 src={"/images/pexels-rdne-7363102.jpg"}
-                alt=''
+                alt=""
               />
               <h1>Same day delivery </h1>
             </div>
@@ -472,9 +488,9 @@ function Content() {
           </div>
         </section>
         <section className={style.benefits}>
-          <h1>Broaden your horizons with Quicklift!</h1>
+          <h1>Broaden your horizons with Wavecrest !</h1>
           <p className={style.bp}>
-            Quicklift offers more than just international parcel shipping! We
+            Wavecrest offers more than just international parcel shipping! We
             provide additional services to make your Canadian and international
             shipments smoother and easier.
           </p>
@@ -488,9 +504,9 @@ function Content() {
               />
             </div>
             <div className={style.rightB}>
-              <h3>Quicklift Logistics services</h3>
+              <h3>Wavecrest Logistics services</h3>
               <p>
-                Quicklift Logistics professionals can guarantee fast shipping
+                Wavecrest Logistics professionals can guarantee fast shipping
                 worldwide for bulky or fragile freight.
               </p>
               <p>
@@ -510,7 +526,7 @@ function Content() {
             <div className={style.rightB}>
               <h3>International art transportation services</h3>
               <p>
-                Quicklift provides authentic international art shipping for
+                Wavecrest provides authentic international art shipping for
                 gallery owners, auction houses, artists and collectors.{" "}
               </p>
               <p>
@@ -523,7 +539,6 @@ function Content() {
           </div>
         </section>
       </section>
-    
 
       {/* <div className="info2">
        
@@ -596,7 +611,7 @@ function Content() {
               </div>
               <p>
                 Bruce and Jet have landed safely in our arms in San Francisco. I
-                just wanted to thank YOU and the entire Quickliftfor helping us
+                just wanted to thank YOU and the entire Wavecrest for helping us
                 with this process from EU to America. I especially appreciate
                 how easy you made it for us when we had to reschedule the flight
                 with such short notice because of my husband’s emergency knee
@@ -652,7 +667,7 @@ function Content() {
                 />
               </div>
               <p>
-                QuickliftService brought my Car from USA to me in Australia
+                Wavecrest Service brought my Car from USA to me in Australia
                 after I was transferred. It saved me a lot of money buying a new
                 car.
               </p>
@@ -678,7 +693,7 @@ function Content() {
                 />
               </div>
               <p>
-                I have been using Quickliftfor my international shipping needs,
+                I have been using Wavecrest for my international shipping needs,
                 and I could not be more satisfied. Their service is top-notch,
                 with prompt deliveries and excellent customer support. The
                 tracking system is reliable, keeping me informed at every step.

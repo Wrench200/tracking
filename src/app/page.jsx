@@ -29,7 +29,7 @@ export default function Home() {
     <>
       <Navbar />
       <Banner
-        h2Text={"Quicklift Logistics "}
+        h2Text={"Wavecrest Logistics"}
         pText={
           " fast, reliable and affordable delivery services at your fingertips!"
         }

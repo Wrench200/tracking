@@ -132,7 +132,7 @@
 .abouts h1,
 .introa {
   font-size: 36px;
-  color: #133984;
+  color: #b91c1c;
   font-weight: 700;
 }
 .floatB p,
@@ -145,7 +145,7 @@
 .freightInfo h1 {
   font-size: 38px;
   font-weight: 800;
-  color: #133984;
+  color: #b91c1c;
 }
 .logistics p,
 .freightInfo p {
@@ -176,7 +176,7 @@
   /* height: 15em; */
   border-radius: 10px 10px 0 0;
   padding: 5em 3em;
-  background-color: #133984;
+  background-color: #b91c1c;
   color: white;
   display: grid;
   text-align: center;

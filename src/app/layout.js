@@ -7,7 +7,7 @@ import Navbar from "@/components/Navbar/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "QuickliftGlobal",
+  title: "Wavecrest Logistics",
   description: "An International Transport and Logistic company",
 };
 

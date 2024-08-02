@@ -42,13 +42,23 @@ function Navbar({ colors }) {
     >
       <nav className={`${style.nav} ${isScrolled ? style.scrolled : ""} `}>
         <div className={style.left} onClick={() => navigate.push("/")}>
-          <Image
-            src={"/images/Screenshot__217_-removebg-preview.png"}
-            width={500}
-            alt="image"
-            height={500}
-            className={style.logo}
-          />
+          {!isScrolled || !isScrollingUp ? (
+            <Image
+              src={"/images/Screenshot__281_-removebg-preview.png"}
+              width={500}
+              alt="image"
+              height={500}
+              className={style.logo}
+            />
+          ) : (
+            <Image
+              src={"/images/Screenshot__282_-removebg-preview.png"}
+              width={500}
+              alt="image"
+              height={500}
+              className={style.logo}
+            />
+          )}
         </div>
 
         <div

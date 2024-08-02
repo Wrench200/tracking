@@ -1,5 +1,5 @@
 .left {
-  width: 12em;
+  width: 14em;
   cursor: pointer;
   height: 4em;
   display: grid;
@@ -19,15 +19,13 @@
   justify-content: space-between;
   width: 100%;
 
-  background-color: #133984;
+  background-color: #b91c1c;
 }
 .lefts {
-  
   display: grid;
   /* background-color: red; */
- 
+
   /* padding: 2em; */
-  
 }
 .rights {
   display: flex;
@@ -70,11 +68,9 @@
   background: none;
   color: inherit;
   text-decoration: underline;
-
 }
-.email{
+.email {
   display: flex;
-  gap: .5em;
+  gap: 0.5em;
   align-items: center;
-
 }

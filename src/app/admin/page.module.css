@@ -43,7 +43,7 @@
   width: fit-content;
   margin: 1em 0;
   padding: 1em;
-  background-color: royalblue;
+  background-color:#b91c1c;
   border: none;
   color: white;
   border-radius: 5px;
@@ -163,18 +163,18 @@
 .nav button {
   padding: 0.4em;
   border: none;
-  background-color: royalblue;
+  background-color: #b91c1c;
   color: white;
   cursor: pointer;
   border-radius: 3px;
 }
 .activeAside {
   border-left: 5px solid white;
-  background-color: royalblue;
+  background-color: #b91c1c;
 }
 .activeNav i {
-  /* color: royalblue !im; */
-  background-color: royalblue;
+  /* color:#b91c1c !im; */
+  background-color: #b91c1c;
 }
 .shipment {
   border: 1px solid #c0c0c0;
@@ -193,7 +193,7 @@
 .shipper h2 {
   font-weight: 500;
   font-size: 20px;
-  color: royalblue;
+  color: #b91c1c;
 }
 .shipper {
   padding: 1em;
@@ -224,9 +224,9 @@
   padding: 0.8em;
   border-radius: 5px;
   border: 1px solid #85888d;
-  outline-color: royalblue;
+  outline-color: #b91c1c;
   outline-offset: 0;
-  /* outline: 1px solid royalblue; */
+  /* outline: 1px solid#b91c1c; */
 }
 .pay option {
   text-transform: uppercase;
@@ -237,7 +237,7 @@
 .shipper form select {
   border: none;
   /* outline: none; */
-  outline-color: royalblue;
+  outline-color: #b91c1c;
   outline-offset: 0;
 
   background: none;
@@ -254,7 +254,7 @@
   border: none;
   background: none;
   padding: 0.3em;
-  outline-color: royalblue;
+  outline-color: #b91c1c;
   outline-offset: 0;
   border-radius: 5px;
   border: 1px solid #85888d;
@@ -281,7 +281,7 @@
   margin: 0.2em auto;
   padding: 0.3em;
   border: none;
-  outline-color: royalblue;
+  outline-color: #b91c1c;
   outline-offset: 0;
   border: 1px solid #c0c0c0;
   border-radius: 3px;
@@ -292,7 +292,7 @@
 
   padding: 0.3em;
   border: none;
-  outline-color: royalblue;
+  outline-color: #b91c1c;
   outline-offset: 0;
   border: 1px solid #c0c0c0;
   border-radius: 3px;
@@ -302,7 +302,7 @@
   padding: 0.6em 0;
   width: 100%;
   font-size: 13px;
-  background-color: royalblue;
+  background-color: #b91c1c;
 }
 
 .shipment a {
@@ -314,7 +314,7 @@
 .shipment button {
   margin: 0.2em;
   border: none;
-  background-color: royalblue;
+  background-color: #b91c1c;
   color: white;
   border-radius: 3px;
 }
@@ -344,7 +344,7 @@
 .search input {
   padding: 0.5em;
   border-radius: 4px;
-  outline-color: royalblue;
+  outline-color: #b91c1c;
   border: 1px solid;
   outline-offset: 0;
   min-width: 65%;
@@ -354,7 +354,12 @@
   font-size: 12px;
   padding: 0.3em;
   border: none;
-  color: royalblue;
-  border: 1px solid royalblue;
+  color: #b91c1c;
+  border: 1px solid#b91c1c;
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .aside {
+    width: 25%;
+  }
 }

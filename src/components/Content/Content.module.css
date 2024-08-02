@@ -23,8 +23,8 @@
   background-color: white;
   padding: 3em;
   box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.15);
-  border-left: 8px solid #eb2b2b;
-  border-right: 8px solid #eb2b2b;
+  border-left: 8px solid#b91c1c;
+  border-right: 8px solid#b91c1c;
   position: relative;
   z-index: 2000;
   display: flex;
@@ -32,7 +32,7 @@
   flex-direction: column;
   align-items: center;
   /* background-color: red; */
-  bottom:8rem;
+  bottom: 8rem;
 }
 @media screen and (max-width: 740px) {
   .trackBox {
@@ -142,7 +142,7 @@
   box-sizing: border-box;
   padding: 2em;
   position: relative;
-  background-color: #b91c1c75;
+  background-color: #b91c1c;
 }
 .card img {
   width: 100%;
@@ -167,13 +167,13 @@
   font-size: 18px;
 }
 .step {
-text-align: center;
+  text-align: center;
   color: white;
   /* border-radius: 5px; */
   padding: 0.5em 2em;
 
   font-size: 20px;
- 
+
   font-weight: 600;
 }
 @media screen and (max-width: 760px) {
@@ -280,10 +280,10 @@ text-align: center;
 .cardDeck:nth-child(1):hover::after {
   background: #b91c1c;
 
-  content: "Quicklift makes international shipping wasy thanks to accurate tracking and reliable delivery around the world.";
+  content: "Wavecrest  makes international shipping wasy thanks to accurate tracking and reliable delivery around the world.";
 }
 .cardDeck:nth-child(3) {
-  background-color: #eb2b2b;
+  background-color: #b91c1c;
   display: grid;
   place-content: center;
   padding: 2em;
@@ -294,7 +294,7 @@ text-align: center;
 }
 .cardDeck:nth-child(3) button {
   background-color: white;
-  color: #eb2b2b;
+  color: #b91c1c;
   border: none;
   padding: 1em;
   width: fit-content;
@@ -308,7 +308,7 @@ text-align: center;
 .cardDeck:nth-child(3) button:hover {
   background-color: #b91c1c;
   color: white;
-  border-color:white;
+  border-color: white;
   transition: all;
 }
 
@@ -323,7 +323,7 @@ text-align: center;
 }
 .benefits h1 {
   font-size: 40px;
-  color:#b91c1c;
+  color: #b91c1c;
   font-weight: 800;
   width: 70%;
   margin: 0 auto;
@@ -359,7 +359,7 @@ text-align: center;
 .rightB h3 {
   font-size: 25px;
   font-weight: 700;
-  color:#b91c1c;
+  color: #b91c1c;
 }
 .rightB p {
   font-size: 18px;
