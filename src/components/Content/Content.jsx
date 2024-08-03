@@ -289,7 +289,7 @@ function Content() {
                 24/7 Customer Support
               </h2>
               <p className="w-4/5 ">
-                Quick response guaranteed around the clock. Don't hesitate to
+                Quick response guaranteed around the clock. Don&apos;t hesitate to
                 contact us{" "}
               </p>
             </div>
