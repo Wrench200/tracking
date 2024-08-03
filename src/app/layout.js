@@ -7,7 +7,7 @@ import Navbar from "@/components/Navbar/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Wavecrest Logistics",
+  title: "Sailwind Shipping",
   description: "An International Transport and Logistic company",
 };
 
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         />{" "}
-        <link rel="icon" href="/favicon.ico?v=5" />
+        <link rel="icon" href="/favicon.ico?v=6" />
       </Head>
       <body className={inter.className}>
         <ShipmentProvider>{children}</ShipmentProvider>

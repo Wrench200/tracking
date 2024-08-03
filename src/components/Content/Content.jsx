@@ -270,7 +270,7 @@ function Content() {
                 Total Status Visibility of Your Shipment
               </h2>
               <p className="w-4/5 ">
-                Tracking of each Wavecrest shipment with complete transparency.
+                Tracking of each Sailwind shipment with complete transparency.
               </p>
             </div>
           </div>
@@ -309,7 +309,7 @@ function Content() {
               We Offer Domestic and International Courier Services
             </h1>
             <p className="text-[16px]">
-              Wavecrest is a leader in local and international parcel delivery
+              Sailwind is a leader in local and international parcel delivery
               and express mail. We provide fast, reliable shipping in Canada and
               around the world. Our success is based on impeccable customer
               service. We guarantee satisfaction and confidence with every
@@ -368,7 +368,7 @@ function Content() {
           <div className={style.top}>
             <h1 className={style.toph1}>The route to simplified shipping</h1>
             <p className={style.bp}>
-              At Wavecrest , we offer a seamless delivery experience for local,
+              At Sailwind , we offer a seamless delivery experience for local,
               national and international deliveries! For a simplified shipping
               experience, follow these steps.
             </p>
@@ -437,7 +437,7 @@ function Content() {
               Are you looking for reliable and professional shipping services?
             </h1>
             <p className={style.bp}>
-              Wavecrest offers a turnkey, professional shipping and delivery
+              Sailwind offers a turnkey, professional shipping and delivery
               service. Trust us for simplified shipping, tracking and delivery
               of parcels of all types within your province, across Canada, to
               the U.S. or around the world
@@ -488,9 +488,9 @@ function Content() {
           </div>
         </section>
         <section className={style.benefits}>
-          <h1>Broaden your horizons with Wavecrest !</h1>
+          <h1>Broaden your horizons with Sailwind !</h1>
           <p className={style.bp}>
-            Wavecrest offers more than just international parcel shipping! We
+            Sailwind offers more than just international parcel shipping! We
             provide additional services to make your Canadian and international
             shipments smoother and easier.
           </p>
@@ -504,9 +504,9 @@ function Content() {
               />
             </div>
             <div className={style.rightB}>
-              <h3>Wavecrest Logistics services</h3>
+              <h3>Sailwind Shipping services</h3>
               <p>
-                Wavecrest Logistics professionals can guarantee fast shipping
+                Sailwind Shipping professionals can guarantee fast shipping
                 worldwide for bulky or fragile freight.
               </p>
               <p>
@@ -526,7 +526,7 @@ function Content() {
             <div className={style.rightB}>
               <h3>International art transportation services</h3>
               <p>
-                Wavecrest provides authentic international art shipping for
+                Sailwind provides authentic international art shipping for
                 gallery owners, auction houses, artists and collectors.{" "}
               </p>
               <p>
@@ -611,7 +611,7 @@ function Content() {
               </div>
               <p>
                 Bruce and Jet have landed safely in our arms in San Francisco. I
-                just wanted to thank YOU and the entire Wavecrest for helping us
+                just wanted to thank YOU and the entire Sailwind for helping us
                 with this process from EU to America. I especially appreciate
                 how easy you made it for us when we had to reschedule the flight
                 with such short notice because of my husband’s emergency knee
@@ -667,7 +667,7 @@ function Content() {
                 />
               </div>
               <p>
-                Wavecrest Service brought my Car from USA to me in Australia
+                Sailwind Service brought my Car from USA to me in Australia
                 after I was transferred. It saved me a lot of money buying a new
                 car.
               </p>
@@ -693,7 +693,7 @@ function Content() {
                 />
               </div>
               <p>
-                I have been using Wavecrest for my international shipping needs,
+                I have been using Sailwind for my international shipping needs,
                 and I could not be more satisfied. Their service is top-notch,
                 with prompt deliveries and excellent customer support. The
                 tracking system is reliable, keeping me informed at every step.

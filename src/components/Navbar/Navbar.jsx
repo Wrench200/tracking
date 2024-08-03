@@ -44,7 +44,7 @@ function Navbar({ colors }) {
         <div className={style.left} onClick={() => navigate.push("/")}>
           {!isScrolled || !isScrollingUp ? (
             <Image
-              src={"/images/Screenshot__281_-removebg-preview.png"}
+              src={"/images/Screenshot__284_-removebg-preview.png"}
               width={500}
               alt="image"
               height={500}
@@ -52,7 +52,7 @@ function Navbar({ colors }) {
             />
           ) : (
             <Image
-              src={"/images/Screenshot__282_-removebg-preview.png"}
+              src={"/images/Screenshot__285_-removebg-preview.png"}
               width={500}
               alt="image"
               height={500}

@@ -280,7 +280,7 @@
 .cardDeck:nth-child(1):hover::after {
   background: #b91c1c;
 
-  content: "Wavecrest  makes international shipping wasy thanks to accurate tracking and reliable delivery around the world.";
+  content: "Sailwind  makes international shipping wasy thanks to accurate tracking and reliable delivery around the world.";
 }
 .cardDeck:nth-child(3) {
   background-color: #b91c1c;

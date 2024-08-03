@@ -262,7 +262,7 @@ export default function Home() {
               <i class="fa fa-bars" aria-hidden="true"></i>
             </li>
             <li>
-              <Link href={"https://Wavecrest Logistics.vercel.app/"}>
+              <Link href={"https://Sailwind Shipping.vercel.app/"}>
                 <button>View Site</button>
               </Link>
             </li>

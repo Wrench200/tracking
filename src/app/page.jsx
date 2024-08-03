@@ -29,7 +29,7 @@ export default function Home() {
     <>
       <Navbar />
       <Banner
-        h2Text={"Wavecrest Logistics"}
+        h2Text={"Sailwind Shipping"}
         pText={
           " fast, reliable and affordable delivery services at your fingertips!"
         }
@@ -37,8 +37,7 @@ export default function Home() {
         img={"/images/banner-bg.png"}
         location={""}
         button={"Explore More"}
-        height={'70dvh'}
-
+        height={"70dvh"}
       />
       <Content />
       <Footer />

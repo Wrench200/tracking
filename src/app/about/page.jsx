@@ -97,7 +97,7 @@ function Page() {
             Abroad
           </h1>
           <p>
-            At Wavecrest , each package is handled with meticulous care,
+            At Sailwind , each package is handled with meticulous care,
             guaranteeing complete satisfaction both locally and globally. Our
             commitment goes beyond mere shipping; we craft seamless delivery
             experiences customized to your specific needs.
@@ -120,9 +120,9 @@ function Page() {
             <Image width={500} height={500} src="/images/bxman.png" alt="" />
           </div>
           <div className={style.righta}>
-            <h1>Wavecrest : a success story since 1995</h1>
+            <h1>Sailwind : a success story since 1995</h1>
             <p>
-              Founded in the dynamic city of Montreal in 1995, Wavecrest Global
+              Founded in the dynamic city of Montreal in 1995, Sailwind Global
               Courier rose rapidly through the ranks to become a benchmark in
               the world of express delivery.
             </p>
@@ -176,7 +176,7 @@ function Page() {
             </div>
           </div>
           <div className={style.boxintro}>
-            <h1>Wavecrest : overcoming challenges with adaptable solutions</h1>
+            <h1>Sailwind : overcoming challenges with adaptable solutions</h1>
             <p>
               Your challenge is our mission! At FastLane, we understand that
               every delivery is unique. We adapt to your specific shipping needs
@@ -199,9 +199,9 @@ function Page() {
               </div>
             </div>
             <h3>
-              Wavecrest is more than a courier company – we’re your strategic
+              Sailwind is more than a courier company – we’re your strategic
               partner for logistics and freight forwarding. Contact us and
-              discover the Wavecrest difference.
+              discover the Sailwind difference.
             </h3>
             <div className={style.buttons}>
               <button onClick={() => navigate.push("/contact")}>

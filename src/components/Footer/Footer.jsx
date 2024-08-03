@@ -9,7 +9,7 @@ function Footer() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const mailtoLink = `mailto:Wavecrest Logisticsagency@gmail.com?subject=Contact%20Form`;
+    const mailtoLink = `mailto:Sailwind Shippingagency@gmail.com?subject=Contact%20Form`;
     window.location.href = mailtoLink;
   };
 
@@ -38,7 +38,7 @@ function Footer() {
                     onClick={() => navigate.push("/")}
                   >
                     <Image
-                      src={"/images/Screenshot__281_-removebg-preview.png"}
+                      src={"/images/Screenshot__284_-removebg-preview.png"}
                       width={500}
                       height={500}
                       alt="image"
@@ -62,7 +62,7 @@ function Footer() {
                   <div>
                     <form onSubmit={handleSubmit} className={style.email}>
                       <p>Email:</p>
-                      <button>Wavecrest Logisticsagency@gmail.com</button>
+                      <button>Sailwind Shippingagency@gmail.com</button>
                     </form>
                   </div>
                 </div>
@@ -164,7 +164,7 @@ function Footer() {
 
               <div class="footer-bottom">
                 <p class="copyright">
-                  &copy; {year} Wavecrest logistics. All Rights Reserved
+                  &copy; {year} Sailwind Shipping. All Rights Reserved
                   <Link href="#" class="copyright-link"></Link>
                 </p>
               </div>
