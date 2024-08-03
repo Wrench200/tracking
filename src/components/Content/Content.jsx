@@ -184,14 +184,14 @@ function Content() {
       <section className="central">
         {loading && (
           <div className="loadingStuff">
-            <div class="loader">
-              <div class="loader-square"></div>
-              <div class="loader-square"></div>
-              <div class="loader-square"></div>
-              <div class="loader-square"></div>
-              <div class="loader-square"></div>
-              <div class="loader-square"></div>
-              <div class="loader-square"></div>
+            <div className="loader">
+              <div className="loader-square"></div>
+              <div className="loader-square"></div>
+              <div className="loader-square"></div>
+              <div className="loader-square"></div>
+              <div className="loader-square"></div>
+              <div className="loader-square"></div>
+              <div className="loader-square"></div>
             </div>
           </div>
         )}
@@ -211,8 +211,8 @@ function Content() {
               required
             />
             <button className="buttonTrack" onClick={handleTrack}>
-              <div class="svg-wrapper-1">
-                <div class="svg-wrapper">
+              <div className="svg-wrapper-1">
+                <div className="svg-wrapper">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -740,10 +740,10 @@ function Content() {
           }
           <div className="arrows2">
             <button id="prev2" onClick={handlePrev}>
-              <i class="fa fa-chevron-left" aria-hidden="true"></i>{" "}
+              <i className="fa fa-chevron-left" aria-hidden="true"></i>{" "}
             </button>
             <button id="next2" onClick={handleNext}>
-              <i class="fas fa-chevron-right    "></i>
+              <i className="fas fa-chevron-right    "></i>
             </button>
           </div>
         </div>
@@ -763,18 +763,18 @@ function Content() {
 
 export default Content;
 
-// <section id="form" class="global-scope">
+// <section id="form" className="global-scope">
 // {/* <div className="image"></div> */}
-// <section class="container">
+// <section className="container">
 //   <h4>CONTACT US</h4>
 //   {/* <header>Contact us</header> */}
-//   <form class="form" action="#">
-//     <div class="input-box">
+//   <form className="form" action="#">
+//     <div className="input-box">
 //       <label>Full Name</label>
 //       <input required="" placeholder="Enter full name" type="text" />
 //     </div>
-//     <div class="column">
-//       <div class="input-box">
+//     <div className="column">
+//       <div className="input-box">
 //         <label>Phone Number</label>
 //         <input
 //           required=""
@@ -782,7 +782,7 @@ export default Content;
 //           type="telephone"
 //         />
 //       </div>
-//       <div class="input-box">
+//       <div className="input-box">
 //         <label>Email</label>
 //         <input
 //           required=""
@@ -791,36 +791,36 @@ export default Content;
 //         />
 //       </div>
 //     </div>
-//     <div class="gender-box">
+//     <div className="gender-box">
 //       <label>Gender</label>
-//       <div class="gender-option">
-//         <div class="gender">
+//       <div className="gender-option">
+//         <div className="gender">
 //           <input name="gender" id="check-male" type="radio" />
 //           <label for="check-male">Male</label>
 //         </div>
-//         <div class="gender">
+//         <div className="gender">
 //           <input name="gender" id="check-female" type="radio" />
 //           <label for="check-female">Female</label>
 //         </div>
-//         <div class="gender">
+//         <div className="gender">
 //           <input name="gender" id="check-other" type="radio" />
 //           <label for="check-other">Prefer not to say</label>
 //         </div>
 //       </div>
 //     </div>
-//     <div class="input-box address">
+//     <div className="input-box address">
 //       <label>Address</label>
 //       <input
 //         required=""
 //         placeholder="Enter street address"
 //         type="text"
 //       />
-//       <div class="column">
+//       <div className="column">
 //         <input required="" placeholder="Country" type="text" />
 //         <input required="" placeholder="Enter your city" type="text" />
 //       </div>
 //     </div>
-//     <div class="input-box address">
+//     <div className="input-box address">
 //       <label>Message</label>
 //       <textarea required="" type="text" />
 //     </div>

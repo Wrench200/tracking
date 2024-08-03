@@ -33,8 +33,9 @@ function Page() {
       <Banner
         img={"/images/pexels-bernard-foss-3049419-4620555.jpg"}
         h2Text={"Reliable parcel pick-up and delivery services,"}
-        location={""}
         spanText={" anywhere in the world"}
+        button={"Contact Us"}
+        location={"/contact"}
       />
       <section className={`central ${style.section}`}>
         {/* <div className={style.infoC} data-aos="fade-up">
@@ -133,7 +134,7 @@ function Page() {
               respecting the well-being of our team.
             </p>
             <p>
-              At FastLane, we adapt to your shipping needs and provide premium
+              At Sailwind, we adapt to your shipping needs and provide premium
               courier services to a variety of industries including
               manufacturing, textiles, automotive, furniture, engineering and
               architecture.
@@ -178,7 +179,7 @@ function Page() {
           <div className={style.boxintro}>
             <h1>Sailwind : overcoming challenges with adaptable solutions</h1>
             <p>
-              Your challenge is our mission! At FastLane, we understand that
+              Your challenge is our mission! At Sailwind, we understand that
               every delivery is unique. We adapt to your specific shipping needs
               with custom courier solutions. Our team of experts is ready to
               meet the transport and delivery requirements of both standard and
@@ -203,12 +204,6 @@ function Page() {
               partner for logistics and freight forwarding. Contact us and
               discover the Sailwind difference.
             </h3>
-            <div className={style.buttons}>
-              <button onClick={() => navigate.push("/contact")}>
-                CONTACT US TODAY
-              </button>
-              <Link href={smsLink}>{""}</Link>
-            </div>
           </div>
         </section>
       </section>

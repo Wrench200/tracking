@@ -65,7 +65,7 @@ function Navbar({ colors }) {
           className="hamburger"
           onClick={() => (menu ? setMenu(false) : setMenu(true))}
         >
-          <input className="checkbox" type="checkbox" checked={menu} />
+          <input className="checkbox" type="checkbox" checked={menu} on />
           <svg fill="none" viewBox="0 0 50 50" height="40" width="50">
             <path
               className="lineTop line"
@@ -113,24 +113,24 @@ function Navbar({ colors }) {
         <ul className={`${style.mobileMenu} ${menu && style.showMenu}`}>
           <li className={path === "/" && style.active}>
             <Link href={"/"}>HOME</Link>
-            <i class="fas fa-location-arrow    "></i>
+            <i className="fas fa-location-arrow    "></i>
           </li>
           <li className={path === "/warehouse" && style.active}>
             <Link href={"/warehouse"}>Warehouse</Link>
-            <i class="fas fa-location-arrow    "></i>
+            <i className="fas fa-location-arrow    "></i>
           </li>
           <li className={path === "/logistics" && style.active}>
             <Link href={"/logistics"}>Logistics</Link>
-            <i class="fas fa-location-arrow    "></i>
+            <i className="fas fa-location-arrow    "></i>
           </li>
 
           <li className={path === "/about" && style.active}>
             <Link href={"/about"}>About</Link>
-            <i class="fas fa-location-arrow    "></i>
+            <i className="fas fa-location-arrow    "></i>
           </li>
           <li className={path === "/contact" && style.active}>
             <Link href={"/contact"}>Contact</Link>
-            <i class="fas fa-location-arrow    "></i>
+            <i className="fas fa-location-arrow    "></i>
           </li>
         </ul>
       )}

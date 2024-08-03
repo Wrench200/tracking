@@ -238,14 +238,14 @@ export default function Home() {
     <div className={style.admin}>
       {loading && (
         <div className="loadingStuff">
-          <div class="loader">
-            <div class="loader-square"></div>
-            <div class="loader-square"></div>
-            <div class="loader-square"></div>
-            <div class="loader-square"></div>
-            <div class="loader-square"></div>
-            <div class="loader-square"></div>
-            <div class="loader-square"></div>
+          <div className="loader">
+            <div className="loader-square"></div>
+            <div className="loader-square"></div>
+            <div className="loader-square"></div>
+            <div className="loader-square"></div>
+            <div className="loader-square"></div>
+            <div className="loader-square"></div>
+            <div className="loader-square"></div>
           </div>
         </div>
       )}
@@ -259,7 +259,7 @@ export default function Home() {
                 showBar ? setShowBar(false) : setShowBar(true);
               }}
             >
-              <i class="fa fa-bars" aria-hidden="true"></i>
+              <i className="fa fa-bars" aria-hidden="true"></i>
             </li>
             <li>
               <Link href={"https://Sailwind Shipping.vercel.app/"}>
@@ -282,21 +282,22 @@ export default function Home() {
               className={`${activeAside === "Add" && style.activeAside}`}
               onClick={() => setActiveAside("Add")}
             >
-              <i class="fa fa-plus" aria-hidden="true"></i>
+              <i className="fa fa-plus" aria-hidden="true"></i>
               <p>Create shipment</p>
             </li>
             <li
               className={`${activeAside === "Edit" && style.activeAside}`}
               onClick={() => setActiveAside("Edit")}
             >
-              <i class="fas fa-file-edit    "></i>
+              <i className="fas fa-file-edit    "></i>
               <p>Edit Shipment</p>
             </li>
             <li
               className={`${activeAside === "Tracking" && style.activeAside}`}
               onClick={() => setActiveAside("Tracking")}
             >
-              <i class="fas fa-map-marked-alt    "></i> <p>Review Tracking</p>
+              <i className="fas fa-map-marked-alt    "></i>{" "}
+              <p>Review Tracking</p>
             </li>{" "}
             <li
               onClick={() => {
@@ -304,7 +305,7 @@ export default function Home() {
                 navigate.push("/login");
               }}
             >
-              <i class="fa fa-sign-out" aria-hidden="true"></i>
+              <i className="fa fa-sign-out" aria-hidden="true"></i>
               <p>Log out</p>
             </li>
           </ul>

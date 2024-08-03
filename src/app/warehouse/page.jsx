@@ -35,7 +35,7 @@ function Page() {
         location={"/contact"}
         // button={"CONTACT US"}
         img={"/images/banr.jpg"}
-        h2Text={"Sailwind :"}
+        h2Text={"Sailwind"}
         pText={"Your trusted partner for international shipping"}
         button={"CONTACT US"}
         height={"40dvh"}
@@ -71,7 +71,7 @@ function Page() {
             <div className={style.logistics}>
               <h1>
                 Elevated Import and Export all-inclusive solutions: Trust
-                FastLane for your Worldwide Deliveries
+                Sailwind for your Worldwide Deliveries
               </h1>
               <p
                 style={{
@@ -154,7 +154,7 @@ function Page() {
                 </p>
                 <div>
                   <span>
-                    Not what you’re looking for? At FastLane, we offer a full
+                    Not what you’re looking for? At Sailwind, we offer a full
                     range of services, including same-day delivery and
                     international courier services.
                   </span>
@@ -164,12 +164,7 @@ function Page() {
                     efficiency.
                   </p>
                 </div>
-                <div className={style.buttons}>
-                  <button onClick={() => navigate.push("/contact")}>
-                    CONTACT US
-                  </button>
-                  <Link href={smsLink}>{""}</Link>
-                </div>
+               
               </div>
             </div>
             <div className={`${style.freight} ${style.f2}`}>
@@ -232,18 +227,13 @@ function Page() {
                     our team for a quick estimate or to find out more about our
                     services. Count on Sailwind Worldwide Courier for express
                     international delivery of parcels, envelopes or other
-                    specialized freight. Contact{" "}
-                    <Link href={smsLink}>{""}</Link> to open an account today.
+                    specialized freight. Contact {"SailwindShippingagency@gmail.com "}
+                     to open an account today.
                     Let us leverage our international shipping expertise to
                     serve for you.
                   </p>
                 </div>
-                <div className={style.buttons}>
-                  <button onClick={() => navigate.push("/contact")}>
-                    CONTACT US
-                  </button>
-                  <Link href={smsLink}>{""}</Link>
-                </div>
+                
               </div>
             </div>
           </div>

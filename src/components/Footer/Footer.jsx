@@ -27,12 +27,12 @@ function Footer() {
 
   return (
     <>
-      <main class="footer">
+      <main className="footer">
         <div className="central">
           <footer>
-            <div class="container">
-              <div class="footer-top section">
-                <div class="footer-brand">
+            <div className="container">
+              <div className="footer-top section">
+                <div className="footer-brand">
                   <div
                     className={style.left}
                     onClick={() => navigate.push("/")}
@@ -45,18 +45,18 @@ function Footer() {
                       className={style.logo}
                     />
                   </div>
-                  <p class="footer-text">
+                  <p className="footer-text">
                     Your fast and secure solution for all your worldwide
                     shipments.
                   </p>
 
-                  <ul class="wrapper">
+                  <ul className="wrapper">
                     {/* <li
-                      class="icon instagram"
+                      className="icon instagram"
                       onClick={() => navigate.push(smsLink)}
                     >
-                      <span class="tooltip">Message</span>
-                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                      <span className="tooltip">Message</span>
+                      <i className="fa fa-envelope" aria-hidden="true"></i>
                     </li> */}
                   </ul>
                   <div>
@@ -67,13 +67,13 @@ function Footer() {
                   </div>
                 </div>
 
-                <ul class="footer-list">
+                <ul className="footer-list">
                   <li>
-                    <p class="footer-list-title">Quick Links</p>
+                    <p className="footer-list-title">Quick Links</p>
                   </li>
 
                   <li>
-                    <Link href="/about" class="footer-link">
+                    <Link href="/about" className="footer-link">
                       About
                     </Link>
                   </li>
@@ -82,90 +82,90 @@ function Footer() {
                     <Link
                       href="#
                     /logistics"
-                      class="footer-link"
+                      className="footer-link"
                     >
                       Blog
                     </Link>
                   </li>
 
                   <li>
-                    <Link href="/contact" class="footer-link">
+                    <Link href="/contact" className="footer-link">
                       Contact Us
                     </Link>
                   </li>
                 </ul>
 
-                <ul class="footer-list">
+                <ul className="footer-list">
                   <li>
-                    <p class="footer-list-title">Services</p>
+                    <p className="footer-list-title">Services</p>
                   </li>
 
                   <li>
-                    <Link href="/warehouse" class="footer-link">
+                    <Link href="/warehouse" className="footer-link">
                       Warehouse
                     </Link>
                   </li>
 
                   <li>
-                    <Link href="/logistics" class="footer-link">
+                    <Link href="/logistics" className="footer-link">
                       Air Freight
                     </Link>
                   </li>
 
                   <li>
-                    <Link href="/logistics" class="footer-link">
+                    <Link href="/logistics" className="footer-link">
                       Ocean Freight
                     </Link>
                   </li>
 
                   <li>
-                    <Link href="/logistics" class="footer-link">
+                    <Link href="/logistics" className="footer-link">
                       Road Freight
                     </Link>
                   </li>
 
                   <li>
-                    <Link href="#" class="footer-link">
+                    <Link href="#" className="footer-link">
                       Packaging
                     </Link>
                   </li>
                 </ul>
 
-                <ul class="footer-list">
+                <ul className="footer-list">
                   <li>
-                    <p class="footer-list-title">Community</p>
+                    <p className="footer-list-title">Community</p>
                   </li>
 
                   <li>
-                    <Link href="#" class="footer-link">
+                    <Link href="#" className="footer-link">
                       Testimonials
                     </Link>
                   </li>
 
                   <li>
-                    <Link href="#" class="footer-link">
+                    <Link href="#" className="footer-link">
                       Track Your Shipment
                     </Link>
                   </li>
 
                   <li>
-                    <Link href="#" class="footer-link">
+                    <Link href="#" className="footer-link">
                       Privacy Policy
                     </Link>
                   </li>
 
                   <li>
-                    <Link href="#" class="footer-link">
+                    <Link href="#" className="footer-link">
                       Terms & Condition
                     </Link>
                   </li>
                 </ul>
               </div>
 
-              <div class="footer-bottom">
-                <p class="copyright">
+              <div className="footer-bottom">
+                <p className="copyright">
                   &copy; {year} Sailwind Shipping. All Rights Reserved
-                  <Link href="#" class="copyright-link"></Link>
+                  <Link href="#" className="copyright-link"></Link>
                 </p>
               </div>
             </div>

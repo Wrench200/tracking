@@ -33,7 +33,7 @@ function Page() {
       <Navbar />
       <Banner
         location={"/contact"}
-        // button={"CONTACT US"}
+        button={"CONTACT US"}
         img={"/images/pexels-dibert-1117211.jpg"}
         h2Text={"Logistics solutions for an efficient,"}
         spanText={"reliable international supply chain"}
@@ -42,11 +42,11 @@ function Page() {
       <div className={style.floatB}>
         <h1>
           Experience seamless global logistics and shipping solutions with
-          FastLane
+          Sailwind
         </h1>
 
         <p>
-          At FastLane, our comprehensive services cover international freight
+          At Sailwind, our comprehensive services cover international freight
           forwarding via air, sea, or land, ensuring reliability and efficiency
           for all your shipments.
         </p>
@@ -97,26 +97,26 @@ function Page() {
                 <h2>2 options for intenational air freight</h2>
                 <ul>
                   <li>
-                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i className="fa fa-check" aria-hidden="true"></i>
                     <p>Door-to-door delivery</p>
                   </li>
                   <li>
-                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i className="fa fa-check" aria-hidden="true"></i>
                     <p>Door-to-airport service</p>
                   </li>
                 </ul>
                 <h2>Services included</h2>
                 <ul>
                   <li>
-                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i className="fa fa-check" aria-hidden="true"></i>
                     <p>Custom Clearance</p>
                   </li>
                   <li>
-                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i className="fa fa-check" aria-hidden="true"></i>
                     <p>ATA carnet (temoorary admision)</p>
                   </li>
                   <li>
-                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i className="fa fa-check" aria-hidden="true"></i>
                     <p>Legalization of Certificate of Origin</p>
                   </li>
                 </ul>
@@ -133,30 +133,30 @@ function Page() {
                 <h2>2 options for intenational ocean freight</h2>
                 <ul>
                   <li>
-                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i className="fa fa-check" aria-hidden="true"></i>
                     <p>Full Container Load (FCL)</p>
                   </li>
                   <li>
-                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i className="fa fa-check" aria-hidden="true"></i>
                     <p>Less than Container Load (LCL)</p>
                   </li>
                 </ul>
                 <h2>Services included</h2>
                 <ul>
                   <li>
-                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i className="fa fa-check" aria-hidden="true"></i>
                     <p>Custom Clearance</p>
                   </li>
                   <li>
-                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i className="fa fa-check" aria-hidden="true"></i>
                     <p>Pick-up and delivery</p>
                   </li>
                   <li>
-                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i className="fa fa-check" aria-hidden="true"></i>
                     <p>Moving</p>
                   </li>
                   <li>
-                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i className="fa fa-check" aria-hidden="true"></i>
                     <p>Legalization of Certificate of Origin</p>
                   </li>
                 </ul>
@@ -173,31 +173,31 @@ function Page() {
                 <h2>4 options for ground transportation</h2>
                 <ul>
                   <li>
-                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i className="fa fa-check" aria-hidden="true"></i>
                     <p>Truckload (TL)</p>
                   </li>
                   <li>
-                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i className="fa fa-check" aria-hidden="true"></i>
                     <p>Less Than Truckload (LTL)</p>
                   </li>
                   <li>
-                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i className="fa fa-check" aria-hidden="true"></i>
                     <p>Pallet shipping</p>
                   </li>
                   <li>
-                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i className="fa fa-check" aria-hidden="true"></i>
                     <p>Solution for oversized shipments</p>
                   </li>
                 </ul>
                 <h2>Services included</h2>
                 <ul>
                   <li>
-                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i className="fa fa-check" aria-hidden="true"></i>
                     <p>Custom Clearance</p>
                   </li>
 
                   <li>
-                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i className="fa fa-check" aria-hidden="true"></i>
                     <p>Legalization of Certificate of Origin</p>
                   </li>
                 </ul>
@@ -219,7 +219,7 @@ function Page() {
               </p>
               <div>
                 <span>
-                  Not what you’re looking for? At FastLane, we offer a full
+                  Not what you’re looking for? At Sailwind, we offer a full
                   range of services, including same-day delivery and
                   international courier services.
                 </span>
@@ -256,7 +256,7 @@ function Page() {
                         style={{
                           color: stage === 1 && " royalblue",
                         }}
-                        class="fa fa-plus-circle"
+                        className="fa fa-plus-circle"
                         aria-hidden="true"
                       ></i>
                     ) : (
@@ -264,7 +264,7 @@ function Page() {
                         style={{
                           color: stage === 1 && " royalblue",
                         }}
-                        class="fa fa-minus-circle"
+                        className="fa fa-minus-circle"
                         aria-hidden="true"
                       ></i>
                     )}
@@ -289,7 +289,7 @@ function Page() {
                         style={{
                           color: stage === 2 && " royalblue",
                         }}
-                        class="fa fa-plus-circle"
+                        className="fa fa-plus-circle"
                         aria-hidden="true"
                       ></i>
                     ) : (
@@ -297,7 +297,7 @@ function Page() {
                         style={{
                           color: stage === 2 && " royalblue",
                         }}
-                        class="fa fa-minus-circle"
+                        className="fa fa-minus-circle"
                         aria-hidden="true"
                       ></i>
                     )}
@@ -325,7 +325,7 @@ function Page() {
                         style={{
                           color: stage === 3 && " royalblue",
                         }}
-                        class="fa fa-plus-circle"
+                        className="fa fa-plus-circle"
                         aria-hidden="true"
                       ></i>
                     ) : (
@@ -333,7 +333,7 @@ function Page() {
                         style={{
                           color: stage === 3 && " royalblue",
                         }}
-                        class="fa fa-minus-circle"
+                        className="fa fa-minus-circle"
                         aria-hidden="true"
                       ></i>
                     )}
@@ -362,7 +362,7 @@ function Page() {
                         style={{
                           color: stage === 4 && " royalblue",
                         }}
-                        class="fa fa-plus-circle"
+                        className="fa fa-plus-circle"
                         aria-hidden="true"
                       ></i>
                     ) : (
@@ -370,7 +370,7 @@ function Page() {
                         style={{
                           color: stage === 4 && " royalblue",
                         }}
-                        class="fa fa-minus-circle"
+                        className="fa fa-minus-circle"
                         aria-hidden="true"
                       ></i>
                     )}
