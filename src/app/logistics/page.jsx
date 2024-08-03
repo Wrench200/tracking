@@ -38,6 +38,7 @@ function Page() {
         h2Text={"Logistics solutions for an efficient,"}
         spanText={"reliable international supply chain"}
         pText={"Find out what we can do for your business!"}
+        height={"80dvh"}
       />
       <div className={style.floatB}>
         <h1>

@@ -37,7 +37,7 @@ export default function Home() {
         img={"/images/banner-bg.png"}
         location={""}
         button={"Explore More"}
-        height={"70dvh"}
+        height={"80dvh"}
       />
       <Content />
       <Footer />

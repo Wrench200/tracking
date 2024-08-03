@@ -32,10 +32,11 @@ function Page() {
       <Navbar />
       <Banner
         img={"/images/pexels-bernard-foss-3049419-4620555.jpg"}
-        h2Text={"Reliable parcel pick-up and delivery services,"}
+        h2Text={"Reliable parcel pick-up and delivery services"}
         spanText={" anywhere in the world"}
         button={"Contact Us"}
         location={"/contact"}
+height={"80dvh"}
       />
       <section className={`central ${style.section}`}>
         {/* <div className={style.infoC} data-aos="fade-up">

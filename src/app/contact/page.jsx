@@ -37,12 +37,13 @@ function Page() {
       <Navbar />
       <Banner
         img={"/images/pexels-pixabay-269790.jpg"}
-        content={"CONTACT US"}
-        height={"40vh"}
-        location={""}
-        spanText={"Ready to ship? We'd love to hear from you!"}
+        h2Text={"CONTACT US"}
+        height={"80vh"}
+        location={"/contact"}
+        
+        pText={"Ready to ship? We'd love to hear from you!"}
       />
-      <h1 className={style.h1}>Contact us</h1>
+      <h1 className={style.h1}>Contact Customer Service</h1>
       <div className="">
         <div className="">
           <form className={style.form} onSubmit={handleSubmit}>
@@ -125,7 +126,7 @@ function Page() {
               />
             </div>
             <div className={style.submit}>
-              <button type="submit">Send Message</button>
+              <button className="bg-red-700" type="submit">Send Message</button>
             </div>
           </form>
         </div>

@@ -38,7 +38,7 @@ function Page() {
         h2Text={"Sailwind"}
         pText={"Your trusted partner for international shipping"}
         button={"CONTACT US"}
-        height={"40dvh"}
+        height={"80dvh"}
       />
       <div className="container flex flex-col max-w-[1200px] justify-center items-center">
         <div className={style.floatB}>
